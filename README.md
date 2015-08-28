@@ -27,3 +27,4 @@ I will put some RNA-seq resources here.
 
 
 ### Single cell RNA-seq
+[On the widespread and critical impact of systematic bias and batch effects in single-cell RNA-Seq data](http://biorxiv.org/content/early/2015/08/25/025528)  
