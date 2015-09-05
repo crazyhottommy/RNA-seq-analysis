@@ -7,6 +7,7 @@ I will put some RNA-seq resources here.
    [biostars](https://www.biostars.org/)  
 3. Steven Turner in UVA is maitaining a list of training opportunities for [genomic data analysis](http://stephenturner.us/edu.html)
 4. Jeff Leek group's recommended [genomic papers](https://github.com/jtleek/genomicspapers/)
+5. [awesome tutorial for NGS file format](http://binf.snipcademy.com/lessons/sequence-file-formats)  
 
 ### RNA-seq specific 
 
