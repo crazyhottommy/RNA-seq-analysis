@@ -19,15 +19,33 @@ I will put some RNA-seq resources here.
 *  [RNA-seq tutorial wiki](https://github.com/crazyhottommy/rnaseq_tutorial) Informatics for RNA-seq: A web resource for analysis on the cloud.  
 *  [RNA-seqlopedia](http://rnaseq.uoregon.edu/)  Great introduction of RNA-seq from sample preparation to data analysis
 
+### Traditional way of RNA-seq analysis
+
+* Two nature protocols for RNA-seq analysis  
+[Count-based differential expression analysis of RNA sequencing data using R and Bioconductor](http://www.nature.com/nprot/journal/v8/n9/full/nprot.2013.099.html)  Based on DESeq and EdgR.  
+[Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks](http://www.nature.com/nprot/journal/v7/n3/full/nprot.2012.016.html)  
+* 
+
+A post from [Nextgeneseek](http://nextgenseek.com/2015/03/three-papers-on-new-rna-seq-methods-offer-a-new-way-to-do-rna-seq-analysis/)  
+
+>The three papers kind of replaces earlier tools from Salzberg’s group (**Bowtie/TopHat,Cufflinks, and Cuffmerge**)   
+they offer a totally new way to go from raw RNA-seq reads to differential expression analysis:  
+align RNA-seq reads to genome ([HISAT](http://www.nature.com/nmeth/journal/v12/n4/full/nmeth.3317.html)instead of Bowtie/TopHat, STAR),  
+assemble transcripts and estimate expression ([StringTie](http://www.nature.com/nbt/journal/v33/n3/full/nbt.3122.html) instead of Cufflinks), and  
+perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/journal/v33/n3/full/nbt.3172.html) instead of Cuffmerge).  
+
+
+
 ### Normalization AND quantification
 *  [A Comparison of Methods: Normalizing High-Throughput RNA Sequencing Data](http://biorxiv.org/content/early/2015/09/03/026062)
 *  [Errors in RNA-Seq quantification affect genes of relevance to human disease](http://www.genomebiology.com/2015/16/1/177)  
 *  [A comprehensive evaluation of ensembl, RefSeq, and UCSC annotations in the context of RNA-seq read mapping and gene quantification](http://www.biomedcentral.com/1471-2164/16/97)  
-
+*  [Salmon: Accurate, Versatile and Ultrafast Quantification from RNA-seq Data using Lightweight-Alignment](http://biorxiv.org/content/early/2015/06/27/021592). It is the sucessor of [Salfish](http://www.cs.cmu.edu/~ckingsf/software/sailfish/downloads.html)  I have used Salfish once, and it is super-fast! Salmon is supposed to be even better.   
+*  [Kallisto](http://nextgenseek.com/2015/05/kallisto-a-new-ultra-fast-rna-seq-quantitation-method/) from Lior Patcher's lab.
 
 
 ### Differential expression
-
+* [sleuth](http://pachterlab.github.io/sleuth/) works with Kallisto
 
 
 ### Blog posts on Kallisto
@@ -38,7 +56,7 @@ I will put some RNA-seq resources here.
 5. [Using Kallisto for gene expression analysis of published RNAseq data](https://benchtobioinformatics.wordpress.com/2015/07/10/using-kallisto-for-gene-expression-analysis-of-published-rnaseq-data/)  
 6. [How accurate is Kallisto?](http://genomespot.blogspot.com/2015/08/how-accurate-is-kallisto.html) from Mark Ziemann  
 7. [ALIGNMENT FREE TRANSCRIPTOME QUANTIFICATION](http://sjcockell.me/2015/05/18/alignment-free-transcriptome-quantification/)
-
+8. [A sleuth for RNA-seq](https://liorpachter.wordpress.com/2015/08/17/a-sleuth-for-rna-seq/)  
 ###
 
 A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed rounded estimates of gene counts from kallisto into DESeq2**   
