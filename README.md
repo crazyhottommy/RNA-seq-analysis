@@ -19,6 +19,14 @@ I will put some RNA-seq resources here.
 *  [RNA-seq tutorial wiki](https://github.com/crazyhottommy/rnaseq_tutorial) Informatics for RNA-seq: A web resource for analysis on the cloud.  
 *  [RNA-seqlopedia](http://rnaseq.uoregon.edu/)  Great introduction of RNA-seq from sample preparation to data analysis
 
+### RNA-seq experimental design 
+* [Tutorial: Rna Seq Experimental Design For Measuring Differential Gene Expression from biostars](https://www.biostars.org/p/65824/)
+* [Scotty - Power Analysis for RNA Seq Experiments](http://bioinformatics.bc.edu/marthlab/scotty/scotty.php)  
+* [Experimental Design in Differential Abundance analysis web server](http://edda.gis.a-star.edu.sg/)  
+* [Experimental Design in Differential Abundance analysis bioconductor package](http://www.bioconductor.org/packages/devel/bioc/html/EDDA.html)
+
+
+
 ### Traditional way of RNA-seq analysis
 
 * Two nature protocols for RNA-seq analysis  
