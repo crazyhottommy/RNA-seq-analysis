@@ -27,7 +27,7 @@ I will put some RNA-seq resources here.
 
 
 
-### Traditional way of RNA-seq analysis
+### Traditional way of RNA-seq analysis 
 
 * Two nature protocols for RNA-seq analysis  
 [Count-based differential expression analysis of RNA sequencing data using R and Bioconductor](http://www.nature.com/nprot/journal/v8/n9/full/nprot.2013.099.html)  Based on DESeq and EdgR.  
@@ -48,6 +48,10 @@ perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/j
 *  [A Comparison of Methods: Normalizing High-Throughput RNA Sequencing Data](http://biorxiv.org/content/early/2015/09/03/026062)
 *  [Errors in RNA-Seq quantification affect genes of relevance to human disease](http://www.genomebiology.com/2015/16/1/177)  
 *  [A comprehensive evaluation of ensembl, RefSeq, and UCSC annotations in the context of RNA-seq read mapping and gene quantification](http://www.biomedcentral.com/1471-2164/16/97)  
+
+#### Map free 
+
+*  [RNASkim](https://github.com/zzj/RNASkim)
 *  [Salmon: Accurate, Versatile and Ultrafast Quantification from RNA-seq Data using Lightweight-Alignment](http://biorxiv.org/content/early/2015/06/27/021592). It is the sucessor of [Salfish](http://www.cs.cmu.edu/~ckingsf/software/sailfish/downloads.html)  I have used Salfish once, and it is super-fast! Salmon is supposed to be even better.   
 *  [Kallisto](http://nextgenseek.com/2015/05/kallisto-a-new-ultra-fast-rna-seq-quantitation-method/) from Lior Patcher's lab.
 
