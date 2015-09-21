@@ -54,12 +54,14 @@ perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/j
 * [BitSeq](http://bitseq.github.io/) Transcript isoform level expression and differential expression estimation for RNA-seq
 
 **For mapping based methods, usually the raw reads are mapped to transcriptome or genome (need to model gaps by exon-exon junction), and then a gene/transcript level counts are obtained by   
-* [HTSeq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html) or   
-* [featureCounts](http://bioinf.wehi.edu.au/featureCounts/) or  
-* [eXpress](http://cdwscience.blogspot.com/2014/02/mrna-quantification-via-express.html). Finally, differential expression is carried out by   
+* [HTSeq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html)    
+* [featureCounts](http://bioinf.wehi.edu.au/featureCounts/)   
+* [eXpress](http://cdwscience.blogspot.com/2014/02/mrna-quantification-via-express.html). 
+
+Finally, differential expression is carried out by   
 * [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html)
-* [EdgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) or  
-* [limma Voom](http://www.statsci.org/smyth/pubs/VoomPreprint.pdf) or
+* [EdgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html)  
+* [limma Voom](http://www.statsci.org/smyth/pubs/VoomPreprint.pdf) 
 * [EBseq](http://www.bioconductor.org/packages/2.14/bioc/html/EBSeq.html) An R package for gene and isoform differential expression analysis of RNA-seq data
 
 * [MetaSeq](http://bioconductor.org/packages/2.13/bioc/html/metaSeq.html) Meta-analysis of RNA-Seq count data in multiple studies  
