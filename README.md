@@ -26,13 +26,17 @@ I will put some RNA-seq resources here.
 * [Experimental Design in Differential Abundance analysis bioconductor package](http://www.bioconductor.org/packages/devel/bioc/html/EDDA.html)
 
 
+### Normalization, quantification, and differential expression
 
-### Traditional way of RNA-seq analysis 
+*  [A Comparison of Methods: Normalizing High-Throughput RNA Sequencing Data](http://biorxiv.org/content/early/2015/09/03/026062)
+*  [Errors in RNA-Seq quantification affect genes of relevance to human disease](http://www.genomebiology.com/2015/16/1/177)  
+*  [A comprehensive evaluation of ensembl, RefSeq, and UCSC annotations in the context of RNA-seq read mapping and gene quantification](http://www.biomedcentral.com/1471-2164/16/97)  
+
+#### Traditional way of RNA-seq analysis 
 
 * Two nature protocols for RNA-seq analysis  
-[Count-based differential expression analysis of RNA sequencing data using R and Bioconductor](http://www.nature.com/nprot/journal/v8/n9/full/nprot.2013.099.html)  Based on DESeq and EdgR.  
+[Count-based differential expression analysis of RNA sequencing data using R and Bioconductor](http://www.nature.com/nprot/journal/v8/n9/full/nprot.2013.099.html)  Based on **DESeq and EdgeR**.  
 [Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks](http://www.nature.com/nprot/journal/v7/n3/full/nprot.2012.016.html)  
-* 
 
 A post from [Nextgeneseek](http://nextgenseek.com/2015/03/three-papers-on-new-rna-seq-methods-offer-a-new-way-to-do-rna-seq-analysis/)  
 
@@ -42,22 +46,16 @@ align RNA-seq reads to genome ([HISAT](http://www.nature.com/nmeth/journal/v12/n
 assemble transcripts and estimate expression ([StringTie](http://www.nature.com/nbt/journal/v33/n3/full/nbt.3122.html) instead of Cufflinks), and  
 perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/journal/v33/n3/full/nbt.3172.html) instead of Cuffmerge).  
 
+* [BitSeq](http://bitseq.github.io/) Transcript isoform level expression and differential expression estimation for RNA-seq
 
-
-### Normalization AND quantification
-*  [A Comparison of Methods: Normalizing High-Throughput RNA Sequencing Data](http://biorxiv.org/content/early/2015/09/03/026062)
-*  [Errors in RNA-Seq quantification affect genes of relevance to human disease](http://www.genomebiology.com/2015/16/1/177)  
-*  [A comprehensive evaluation of ensembl, RefSeq, and UCSC annotations in the context of RNA-seq read mapping and gene quantification](http://www.biomedcentral.com/1471-2164/16/97)  
+**For mapping based methods, usually the raw reads are mapped to transcriptome, and then a gene/transcript level counts are obtained by [HTSeq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html) or [featureCounts](http://bioinf.wehi.edu.au/featureCounts/). Finally, differential expression is carried out by [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html), [EdgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) or [limma Voom](http://www.statsci.org/smyth/pubs/VoomPreprint.pdf)
 
 #### Map free 
 
 *  [RNASkim](https://github.com/zzj/RNASkim)
 *  [Salmon: Accurate, Versatile and Ultrafast Quantification from RNA-seq Data using Lightweight-Alignment](http://biorxiv.org/content/early/2015/06/27/021592). It is the sucessor of [Salfish](http://www.cs.cmu.edu/~ckingsf/software/sailfish/downloads.html)  I have used Salfish once, and it is super-fast! Salmon is supposed to be even better.   
 *  [Kallisto](http://nextgenseek.com/2015/05/kallisto-a-new-ultra-fast-rna-seq-quantitation-method/) from Lior Patcher's lab.
-
-
-### Differential expression
-* [sleuth](http://pachterlab.github.io/sleuth/) works with Kallisto
+*  [sleuth](http://pachterlab.github.io/sleuth/) works with Kallisto for differential expression.
 
 
 ### Blog posts on Kallisto
@@ -69,7 +67,7 @@ perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/j
 6. [How accurate is Kallisto?](http://genomespot.blogspot.com/2015/08/how-accurate-is-kallisto.html) from Mark Ziemann  
 7. [ALIGNMENT FREE TRANSCRIPTOME QUANTIFICATION](http://sjcockell.me/2015/05/18/alignment-free-transcriptome-quantification/)
 8. [A sleuth for RNA-seq](https://liorpachter.wordpress.com/2015/08/17/a-sleuth-for-rna-seq/)  
-###
+
 
 A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed rounded estimates of gene counts from kallisto into DESeq2**   
 >There is some confusion in the answers to this question that hopefully I can clarify with the three comments below:
