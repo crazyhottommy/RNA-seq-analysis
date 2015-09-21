@@ -25,6 +25,11 @@ I will put some RNA-seq resources here.
 * [Experimental Design in Differential Abundance analysis web server](http://edda.gis.a-star.edu.sg/)  
 * [Experimental Design in Differential Abundance analysis bioconductor package](http://www.bioconductor.org/packages/devel/bioc/html/EDDA.html)
 
+### Quality Control
+
+* [QoRTs](http://hartleys.github.io/QoRTs/): a comprehensive toolset for quality control and data processing of RNA-Seq experiments  
+* [QUaCRS](http://bioserv.mps.ohio-state.edu/QuaCRS/index.php/pages/view/downloads)    
+* [RSeQC](http://rseqc.sourceforge.net/) RNA-seq data QC  
 
 ### Normalization, quantification, and differential expression
 
@@ -48,7 +53,22 @@ perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/j
 
 * [BitSeq](http://bitseq.github.io/) Transcript isoform level expression and differential expression estimation for RNA-seq
 
-**For mapping based methods, usually the raw reads are mapped to transcriptome, and then a gene/transcript level counts are obtained by [HTSeq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html) or [featureCounts](http://bioinf.wehi.edu.au/featureCounts/). Finally, differential expression is carried out by [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html), [EdgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) or [limma Voom](http://www.statsci.org/smyth/pubs/VoomPreprint.pdf)
+**For mapping based methods, usually the raw reads are mapped to transcriptome or genome (need to model gaps by exon-exon junction), and then a gene/transcript level counts are obtained by   [HTSeq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html) or   [featureCounts](http://bioinf.wehi.edu.au/featureCounts/) or   [eXpress](http://cdwscience.blogspot.com/2014/02/mrna-quantification-via-express.html). Finally, differential expression is carried out by   [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html),   [EdgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html) or  
+[limma Voom](http://www.statsci.org/smyth/pubs/VoomPreprint.pdf) or
+[EBseq](http://www.bioconductor.org/packages/2.14/bioc/html/EBSeq.html) An R package for gene and isoform differential expression analysis of RNA-seq data
+
+[MetaSeq](http://bioconductor.org/packages/2.13/bioc/html/metaSeq.html) Meta-analysis of RNA-Seq count data in multiple studies  
+[derfinder](http://www.bioconductor.org/packages/release/bioc/html/derfinder.html) Annotation-agnostic differential expression analysis of RNA-seq data at base-pair resolution  
+
+#### Extra Notes
+
+* [In RNA-Seq, 2 != 2: Between-sample normalization](https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/)  
+* [RPKM/FPKM, TPM and raw counts for RNA-seq](http://crazyhottommy.blogspot.com/2015/06/rpkmfpkm-tpm-and-raw-counts-for-rna-seq.html)  
+
+### Benchmarking 
+[bcbio.rnaseq](https://github.com/roryk/bcbio.rnaseq)  
+[RNAseqGUI](http://bioinfo.na.iac.cnr.it/RNASeqGUI/Manual.html). I have used several times. looks good.
+[compcodeR](http://bcf.isb-sib.ch/data/compcodeR/)
 
 #### Map free 
 
