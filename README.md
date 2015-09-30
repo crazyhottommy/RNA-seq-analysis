@@ -120,6 +120,9 @@ A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed round
 [Statistical analysis and visualization of functional profiles for gene and gene clusters: bioconductor clusterProfiler](http://www.bioconductor.org/packages/devel/bioc/html/clusterProfiler.html) by GuangChuang Yu from University of HongKong. Can do many jobs and GSEA like figure. It is very useful and I will give it a try besides [GAGE](http://bioconductor.org/packages/release/bioc/html/gage.html).
 
 
+### Fusion gene detection
+* [fusioncatcher](https://github.com/ndaniel/fusioncatcher)  
+* [PRADA](https://github.com/crazyhottommy/PRADA_pipeline_Verhaak_lab) from our lab
 
 ### Alternative splicing
 * [SplicePlot: a tool for visualizing alternative splicing](http://montgomerylab.stanford.edu/spliceplot/index.html) Sashimi plots
