@@ -76,6 +76,7 @@ Finally, differential expression is carried out by
 
 * [In RNA-Seq, 2 != 2: Between-sample normalization](https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/)  
 * [RPKM/FPKM, TPM and raw counts for RNA-seq](http://crazyhottommy.blogspot.com/2015/06/rpkmfpkm-tpm-and-raw-counts-for-rna-seq.html)  
+* [Youtube video counts vs TPM](https://www.youtube.com/watch?v=ztyjiCCt_lM)
 
 ### Benchmarking 
 [bcbio.rnaseq](https://github.com/roryk/bcbio.rnaseq)  
