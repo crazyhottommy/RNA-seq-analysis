@@ -67,6 +67,7 @@ Finally, differential expression is carried out by
 * [EdgeR](http://bioconductor.org/packages/release/bioc/html/edgeR.html)  
 * [limma Voom](http://www.statsci.org/smyth/pubs/VoomPreprint.pdf) 
 * [EBseq](http://www.bioconductor.org/packages/2.14/bioc/html/EBSeq.html) An R package for gene and isoform differential expression analysis of RNA-seq data
+* [JunctionSeq](http://hartleys.github.io/JunctionSeq/) differential usage of exons and splice junctions in High-Throughput, Next-Generation RNA-Seq datasets. The methodology is heavily based on the DEXSeq bioconductor package.The core advantage of JunctionSeq over other similar tools is that it provides a powerful automated tools for generating readable and interpretable plots and tables to facilitate the interpretation of the results. An example results report is available [here](https://dl.dropboxusercontent.com/u/103621176/pipelineWalkthrough/exampleResults/testForDU.html).
 
 * [MetaSeq](http://bioconductor.org/packages/2.13/bioc/html/metaSeq.html) Meta-analysis of RNA-Seq count data in multiple studies  
 * [derfinder](http://www.bioconductor.org/packages/release/bioc/html/derfinder.html) Annotation-agnostic differential expression analysis of RNA-seq data at base-pair resolution  
