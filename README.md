@@ -90,7 +90,7 @@ Finally, differential expression is carried out by
 #### Map free 
 
 *  [RNASkim](https://github.com/zzj/RNASkim)
-*  [Salmon: Accurate, Versatile and Ultrafast Quantification from RNA-seq Data using Lightweight-Alignment](http://biorxiv.org/content/early/2015/06/27/021592). It is the sucessor of [Salfish](http://www.cs.cmu.edu/~ckingsf/software/sailfish/downloads.html)  I have used Salfish once, and it is super-fast! Salmon is supposed to be even better.   
+*  [Salmon: Accurate, Versatile and Ultrafast Quantification from RNA-seq Data using Lightweight-Alignment](http://biorxiv.org/content/early/2015/06/27/021592). It is the sucessor of [Salfish](http://www.cs.cmu.edu/~ckingsf/software/sailfish/downloads.html)  I have used Salfish once, and it is super-fast! Salmon is supposed to be even better. [tutorial](https://github.com/ngs-docs/2015-nov-adv-rna/blob/master/AGENDA.md)
 *  [Kallisto](http://nextgenseek.com/2015/05/kallisto-a-new-ultra-fast-rna-seq-quantitation-method/) from Lior Patcher's lab.
 *  [sleuth](http://pachterlab.github.io/sleuth/) works with Kallisto for differential expression.
 *  [Reanalysis of published RNA-Seq data using kallisto and sleuth](http://lair.berkeley.edu/) based on shiny.
