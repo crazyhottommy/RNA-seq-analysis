@@ -141,6 +141,8 @@ A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed round
 ### Fusion gene detection
 * [fusioncatcher](https://github.com/ndaniel/fusioncatcher)  
 * [PRADA](https://github.com/crazyhottommy/PRADA_pipeline_Verhaak_lab) from our lab
+* [Fusion Matcher](https://github.com/ErasmusMC-Bioinformatics/fuma): Match predicted fusions according to chromosomal location or gene annotation(s)
+* [paper:Comprehensive evaluation of fusion transcript detection algorithms and a meta-caller to combine top performing methods in paired-end RNA-seq data](https://nar.oxfordjournals.org/content/early/2015/11/17/nar.gkv1234.full)  
 
 ### Alternative splicing
 * [SplicePlot: a tool for visualizing alternative splicing](http://montgomerylab.stanford.edu/spliceplot/index.html) Sashimi plots
