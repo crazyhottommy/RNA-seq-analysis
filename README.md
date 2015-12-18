@@ -124,6 +124,7 @@ A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed round
 
 ### Batch effects
 [TACKLING BATCH EFFECTS AND BIAS IN TRANSCRIPT EXPRESSION](http://mikelove.github.io/eurobioc2015/#/slide-1) by mike love
+[paper:Tackling the widespread and critical impact of batch effects in high-throughput data](http://www.nature.com/nrg/journal/v11/n10/full/nrg2825.html)
 
 ### Databases
 * [ReCount is an online resource consisting of RNA-seq gene count datasets built using the raw data from 18 different studies](http://bowtie-bio.sourceforge.net/recount/)
