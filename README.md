@@ -125,6 +125,11 @@ A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed round
 ### Batch effects
 [TACKLING BATCH EFFECTS AND BIAS IN TRANSCRIPT EXPRESSION](http://mikelove.github.io/eurobioc2015/#/slide-1) by mike love  
 [paper:Tackling the widespread and critical impact of batch effects in high-throughput data](http://www.nature.com/nrg/journal/v11/n10/full/nrg2825.html) by Jeffrey T. Leek in Rafael A. Irizarry's lab.
+[A reanalysis of mouse ENCODE comparative gene expression data](http://f1000research.com/articles/4-121/v1)  
+[Is it species or is it batch? They are confounded, so we can't know](http://simplystatistics.org/2015/05/20/is-it-species-or-is-it-batch-they-are-confounded-so-we-cant-know/)    
+[Mouse / Human Transcriptomics and Batch Effects](https://rmflight.github.io/posts/2015/06/mouse_human_transcriptomics.html)  
+[Meta-analysis of RNA-seq expression data across species, tissues and studies](http://www.genomebiology.com/2015/16/1/287):**Interspecies clustering by tissue is the predominantly observed pattern among various studies under various distance metrics and normalization methods**
+[Surrogate Variable Analysis:SVA bioconductor](https://www.bioconductor.org/packages/3.3/bioc/html/sva.html)
 
 ### Databases
 * [ReCount is an online resource consisting of RNA-seq gene count datasets built using the raw data from 18 different studies](http://bowtie-bio.sourceforge.net/recount/)
