@@ -39,6 +39,7 @@ I will put some RNA-seq resources here.
 *  [A comprehensive evaluation of ensembl, RefSeq, and UCSC annotations in the context of RNA-seq read mapping and gene quantification](http://www.biomedcentral.com/1471-2164/16/97)  
 *  [Comparing the normalization methods for the differential analysis of Illumina high-throughput RNA-Seq data](http://www.biomedcentral.com/1471-2105/16/347)
 *  paper: [Union Exon Based Approach for RNA-Seq Gene Quantification: To Be or Not to Be?](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141910)  
+*  [paper: The impact of amplification on differential expression analyses by RNA-seq](http://biorxiv.org/content/early/2015/12/28/035493) Computational removal of read duplicates is not recommended for differential expression analysis.
 
 #### Traditional way of RNA-seq analysis 
 
