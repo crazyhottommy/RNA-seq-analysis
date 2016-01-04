@@ -97,6 +97,7 @@ Finally, differential expression is carried out by
 *  [sleuth](http://pachterlab.github.io/sleuth/) works with Kallisto for differential expression.
 *  [Reanalysis of published RNA-Seq data using kallisto and sleuth](http://lair.berkeley.edu/) based on shiny.
 *  [tximport: import and summarize transcript-level estimates for gene-level analysis](https://github.com/mikelove/tximport/blob/master/vignettes/tximport.md)  
+*  [f1000 research paper Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v1) from Mike love et.al.
 
 
 ### Blog posts on Kallisto
