@@ -49,7 +49,9 @@ I will put some RNA-seq resources here.
 
 A nice tutorial from f1000 research [RNA-Seq workflow: gene-level exploratory analysis and differential expression](http://f1000research.com/articles/4-1070/v1) from Michael Love who is the author of DESeq2.
 
-A post from [Nextgeneseek](http://nextgenseek.com/2015/03/three-papers-on-new-rna-seq-methods-offer-a-new-way-to-do-rna-seq-analysis/)  
+A post from [Nextgeneseek](http://nextgenseek.com/2015/03/three-papers-on-new-rna-seq-methods-offer-a-new-way-to-do-rna-seq-analysis/)
+
+[QuickRNASeq lifts large-scale RNA-seq data analyses to the next level of automation and interactive visualization](http://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-2356-9)  
 
 >The three papers kind of replaces earlier tools from Salzberg’s group (**Bowtie/TopHat,Cufflinks, and Cuffmerge**)   
 they offer a totally new way to go from raw RNA-seq reads to differential expression analysis:  
