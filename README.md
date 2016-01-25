@@ -133,7 +133,8 @@ A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed round
 [Is it species or is it batch? They are confounded, so we can't know](http://simplystatistics.org/2015/05/20/is-it-species-or-is-it-batch-they-are-confounded-so-we-cant-know/)    
 [Mouse / Human Transcriptomics and Batch Effects](https://rmflight.github.io/posts/2015/06/mouse_human_transcriptomics.html)  
 [Meta-analysis of RNA-seq expression data across species, tissues and studies](http://www.genomebiology.com/2015/16/1/287):**Interspecies clustering by tissue is the predominantly observed pattern among various studies under various distance metrics and normalization methods**
-[Surrogate Variable Analysis:SVA bioconductor](https://www.bioconductor.org/packages/3.3/bioc/html/sva.html)
+[Surrogate Variable Analysis:SVA bioconductor](https://www.bioconductor.org/packages/3.3/bioc/html/sva.html)  
+[Paper Summary: Systematic bias and batch effects in single-cell RNA-Seq data](http://nextgenseek.com/2016/01/paper-summary-systematic-bias-and-batch-effects-in-single-cell-rna-seq-data/)  
 
 ### Databases
 * [ReCount is an online resource consisting of RNA-seq gene count datasets built using the raw data from 18 different studies](http://bowtie-bio.sourceforge.net/recount/)
