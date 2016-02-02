@@ -19,6 +19,7 @@ I will put some RNA-seq resources here.
 *  [RNA-seq tutorial wiki](https://github.com/crazyhottommy/rnaseq_tutorial) Informatics for RNA-seq: A web resource for analysis on the cloud.  
 *  [RNA-seqlopedia](http://rnaseq.uoregon.edu/)  Great introduction of RNA-seq from sample preparation to data analysis
 *  [RNAseq data analysis from data carpentry](https://github.com/datacarpentry/rnaseq-data-analysis)
+*  [Isoform prefiltering improves performance of count-based methods for analysis of differential transcript usage](http://www.genomebiology.com/2016/17/1/12)
 
 ### RNA-seq experimental design 
 * [Tutorial: Rna Seq Experimental Design For Measuring Differential Gene Expression from biostars](https://www.biostars.org/p/65824/)
