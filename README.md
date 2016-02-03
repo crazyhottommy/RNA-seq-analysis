@@ -21,6 +21,7 @@ I will put some RNA-seq resources here.
 *  [RNAseq data analysis from data carpentry](https://github.com/datacarpentry/rnaseq-data-analysis)
 *  [paper: Isoform prefiltering improves performance of count-based methods for analysis of differential transcript usage](http://www.genomebiology.com/2016/17/1/12)
 *  [paper: A survey of best practices for RNA-seq data analysis](http://www.genomebiology.com/2016/17/1/13)
+*  [paper: Cross-platform normalization of microarray and RNA-seq data for machine learning applications](https://peerj.com/articles/1621/#results|discussion). [Tool](https://github.com/greenelab/TDM) 
 
 ### RNA-seq experimental design 
 * [Tutorial: Rna Seq Experimental Design For Measuring Differential Gene Expression from biostars](https://www.biostars.org/p/65824/)
