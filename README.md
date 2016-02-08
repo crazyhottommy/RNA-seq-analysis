@@ -130,7 +130,7 @@ A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed round
 
 >In summary, please do not plug in rounded estimates of gene counts from kallisto into DESeq2 and other tools. While it is technically possible, it is not statistically advisable. Instead, you should use tools that make valid distributional assumptions about the estimates.
 
-**However, Charlotte Soneson, Mike Love and Mark Robinson [showed in a f1000 paper: Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v1) that rounded values from transcript level can be fed into DESeq2 etc for gene-level differential expression, and it is [valid](https://twitter.com/markrobinsonca/status/659823934804766720) and preferable in many ways**.
+**However, Charlotte Soneson, Mike Love and Mark Robinson [showed in a f1000 paper: Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v1) that rounded values from transcript level can be [fed into DESeq2 etc](https://www.biostars.org/p/143458/#144003) for gene-level differential expression, and it is [valid](https://twitter.com/markrobinsonca/status/659823934804766720) and preferable in many ways**.
 
 Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
