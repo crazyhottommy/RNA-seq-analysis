@@ -1,5 +1,4 @@
 # RNA-seq analysis
-I will put some RNA-seq resources here.  
 
 ### General sequencing data analysis materials
 * [Next-Gen Sequence Analysis Workshop (2015)](http://angus.readthedocs.org/en/2015/) held by [Titus Brown](http://genomecenter.ucdavis.edu/people/faculty/name/c-titus-brown/)  (now in UC Davis)
@@ -7,7 +6,8 @@ I will put some RNA-seq resources here.
    [biostars](https://www.biostars.org/)  
 * Steven Turner in UVA is maitaining a list of training opportunities for [genomic data analysis](http://stephenturner.us/edu.html)
 *  Jeff Leek group's recommended [genomic papers](https://github.com/jtleek/genomicspapers/)
-* [awesome tutorial for NGS file format](http://binf.snipcademy.com/lessons/sequence-file-formats)  
+* [awesome tutorial for NGS file format](http://binf.snipcademy.com/lessons/sequence-file-formats)
+* [UVA Bioconnector Workshops](http://bioconnector.org/workshops/)
 
 ### RNA-seq specific 
 
