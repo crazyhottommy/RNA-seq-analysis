@@ -163,6 +163,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [PRADA](https://github.com/crazyhottommy/PRADA_pipeline_Verhaak_lab) from our lab
 * [Fusion Matcher](https://github.com/ErasmusMC-Bioinformatics/fuma): Match predicted fusions according to chromosomal location or gene annotation(s)
 * [paper:Comprehensive evaluation of fusion transcript detection algorithms and a meta-caller to combine top performing methods in paired-end RNA-seq data](https://nar.oxfordjournals.org/content/early/2015/11/17/nar.gkv1234.full)  
+* [chimera](https://www.bioconductor.org/packages/release/bioc/html/chimera.html) A package for secondary analysis of fusion products
 
 ### Alternative splicing
 * [SplicePlot: a tool for visualizing alternative splicing](http://montgomerylab.stanford.edu/spliceplot/index.html) Sashimi plots
