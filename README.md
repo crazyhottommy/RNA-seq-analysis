@@ -163,6 +163,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [PRADA](https://github.com/crazyhottommy/PRADA_pipeline_Verhaak_lab) from our lab
 * [Fusion Matcher](https://github.com/ErasmusMC-Bioinformatics/fuma): Match predicted fusions according to chromosomal location or gene annotation(s)
 * [paper:Comprehensive evaluation of fusion transcript detection algorithms and a meta-caller to combine top performing methods in paired-end RNA-seq data](https://nar.oxfordjournals.org/content/early/2015/11/17/nar.gkv1234.full)  
+* [paper: Comparative assessment of methods for the fusion transcripts detection from RNA-Seq data](http://www.nature.com/articles/srep21597)
 * [chimera](https://www.bioconductor.org/packages/release/bioc/html/chimera.html) A package for secondary analysis of fusion products.
 * [Pegasus](https://sourceforge.net/p/pegasus-fus/wiki/Main%20Manual/) Fusion Annotation and Prediction.
 * [Oncofuse](https://github.com/mikessh/oncofuse) is a framework designed to estimate the oncogenic potential of de-novo discovered gene fusions. It uses several hallmark features and employs a bayesian classifier to provide the probability of a given gene fusion being a driver mutation.
