@@ -174,7 +174,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [SplicePlot: a tool for visualizing alternative splicing](http://montgomerylab.stanford.edu/spliceplot/index.html) Sashimi plots
 * [Multivariate Analysis of Transcript Splicing (MATS)](http://rnaseq-mats.sourceforge.net/)
 * [SNPlice](https://code.google.com/p/snplice/) is a software tool to find and evaluate the co-occurrence of single-nucleotide-polymorphisms (SNP) and altered splicing in next-gen mRNA sequence reads. SNPlice requires, as input: genome aligned reads, exon-intron-exon junctions, and SNPs. exon-intron-exon junctions and SNPs may be derived from the reads directly, using, for example, TopHat2 and samtools, or they may be derived from independent sources
-* [Visualizing Alternative Splicing](http://vials.io/vials/)  
+* [Visualizing Alternative Splicing](http://vials.io/vials/) [github page](https://github.com/Caleydo/vials)
 * [spladder](https://github.com/ratschlab/spladder) Tool for the detection and quantification of alternative splicing events from RNA-Seq data
 
 ### transcriptional pausing 
