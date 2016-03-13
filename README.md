@@ -95,6 +95,7 @@ Finally, differential expression is carried out by
 [RNAseqGUI](http://bioinfo.na.iac.cnr.it/RNASeqGUI/Manual.html). I have used several times. looks good.
 [compcodeR](http://bcf.isb-sib.ch/data/compcodeR/)  
 [paper: Benchmark Analysis of Algorithms for Determining and Quantifying Full-length mRNA Splice Forms from RNA-Seq Data](http://bioinformatics.oxfordjournals.org/content/early/2015/09/03/bioinformatics.btv488)
+[paper: Comparative evaluation of isoform-level gene expression estimation algorithms for RNA-seq and exon-array platforms](http://bib.oxfordjournals.org/content/early/2016/02/26/bib.bbw016.short?rss=1)
 
 #### Map free 
 
