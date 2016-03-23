@@ -8,6 +8,7 @@
 *  Jeff Leek group's recommended [genomic papers](https://github.com/jtleek/genomicspapers/)
 * [awesome tutorial for NGS file format](http://binf.snipcademy.com/lessons/sequence-file-formats)
 * [UVA Bioconnector Workshops](http://bioconnector.org/workshops/)
+* [Explaining your errors QC fail](https://sequencing.qcfail.com/)
 
 ### RNA-seq specific 
 
