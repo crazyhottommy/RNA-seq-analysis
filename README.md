@@ -204,3 +204,4 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [Inference and visualisation of Single-Cell RNA-seq Data data as a hierarchical tree structure: bioconductor CellTree](http://bioconductor.org/packages/devel/bioc/html/cellTree.html)  
 * [Fast and accurate single-cell RNA-Seq analysis by clustering of transcript-compatibility counts](http://biorxiv.org/content/early/2016/01/15/036863) by Lior Pachter et.al
 * [cellity](https://github.com/ti243/cellity): Classification of low quality cells in scRNA-seq data using R.
+* [bioconductor: using scran to perform basic analyses of single-cell RNA-seq data](http://bioconductor.org/packages/devel/bioc/vignettes/scran/inst/doc/scran.html)
