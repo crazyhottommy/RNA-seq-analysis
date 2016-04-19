@@ -137,6 +137,8 @@ A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed round
 
 Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
+* [artemis](https://github.com/RamsinghLab/artemis): RNAseq analysis, from raw reads to pathways, typically in a few minutes. Mostly by wrapping Kallisto and caching everything we possibly can.
+
 ### Batch effects
 [TACKLING BATCH EFFECTS AND BIAS IN TRANSCRIPT EXPRESSION](http://mikelove.github.io/eurobioc2015/#/slide-1) by mike love  
 [paper:Tackling the widespread and critical impact of batch effects in high-throughput data](http://www.nature.com/nrg/journal/v11/n10/full/nrg2825.html) by Jeffrey T. Leek in Rafael A. Irizarry's lab.  
