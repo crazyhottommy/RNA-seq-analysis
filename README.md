@@ -138,7 +138,9 @@ A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed round
 
 Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
-* [artemis](https://github.com/RamsinghLab/artemis): RNAseq analysis, from raw reads to pathways, typically in a few minutes. Mostly by wrapping Kallisto and caching everything we possibly can.
+* [artemis](https://github.com/RamsinghLab/artemis): RNAseq analysis, from raw reads to pathways, typically in a few minutes. Mostly by wrapping `Kallisto` and caching everything we possibly can.
+* [isolator](https://github.com/rob-p/isolator):Rapid and robust analysis of RNA-Seq experiments.
+>Isolator has a particular focus on producing stable, consistent estimates. Maximum likelihood approaches produce unstable point estimates: small changes in the data can result in drastically different results, conflating downstream analysis like clustering or PCA. Isolator produces estimates that are in general, simultaneously more stable and more accurate other methods
 
 ### Batch effects
 [TACKLING BATCH EFFECTS AND BIAS IN TRANSCRIPT EXPRESSION](http://mikelove.github.io/eurobioc2015/#/slide-1) by mike love  
