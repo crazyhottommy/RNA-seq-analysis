@@ -19,5 +19,20 @@ pyenv install --list
 ## install python 3.5
 pyenv install 3.5.1
 
+## install python 2.7
+pyenv install 2.7.11 
+
+## set global 
+pyenv global 2.7.11 3.5.1
+
+## if you want to use python 3.5.1 in the current folder
+pyenv local 3.5.1
+python --version
+3.5.1
+
+## reset to 2.7.11
+pyenv local 2.7.11
+python --version
+2.7.11
 
 ```
