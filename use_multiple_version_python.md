@@ -44,5 +44,7 @@ python --version
 install `snakemake`:
 
 ```bash
+pyenv install miniconda3-3.19.0
+pyenv global miniconda3-3.19.0
 pip3 install --user snakemake pyaml
 ```
