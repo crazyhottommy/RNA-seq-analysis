@@ -40,3 +40,9 @@ python --version
 2.7.11
 
 ```
+
+install `snakemake`:
+
+```bash
+pip3 install --user snakemake pyaml
+```
