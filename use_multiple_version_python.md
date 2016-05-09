@@ -23,7 +23,11 @@ pyenv install 3.5.1
 pyenv install 2.7.11 
 
 ## set global 
-pyenv global 2.7.11 3.5.1
+pyenv global 3.5.1
+pyenv versions
+system
+  2.7.11
+* 3.5.1 (set by /Users/mtang1/.pyenv/version)
 
 ## if you want to use python 3.5.1 in the current folder
 pyenv local 3.5.1
