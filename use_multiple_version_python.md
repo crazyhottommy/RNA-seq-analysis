@@ -1,3 +1,6 @@
+
+### Snakemake on my Mac
+
 Recently, I want to test [`snakemake`](https://bitbucket.org/snakemake/snakemake/wiki/Documentation) for building up a pipeline. It requires python3, but I have python2.x installed.  
 It seems [`virtualenv`](http://docs.python-guide.org/en/latest/dev/virtualenvs/) and [`pyenv`](https://github.com/yyuu/pyenv) are
 the tools to manage multiple versions of python on the same machine. I tried `pyenv` on my mac OS.
@@ -55,3 +58,15 @@ I got an error when evoke `snakemake` in the terminal:
 
 I have to add `import multiprocessing` in the `utils.py` to avoid that.
 [The issue](https://bitbucket.org/snakemake/snakemake/issues/324/nameerror-name-multiprocessing-is-not) was fixed in the new release.
+
+### Snakemake on HPC
+
+Samir has installed `snakemake` on nautilus using `anaconda` and set up the virtual environment by `virtualenv`.
+To activate it:
+
+`source activate snakemake`
+
+To inactivate it
+
+`source deactivate`
+
