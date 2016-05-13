@@ -54,3 +54,4 @@ I got an error when evoke `snakemake` in the terminal:
 >Traceback (most recent call last): File "/Users/mtang1/.pyenv/versions/miniconda3-3.19.0/bin/snakemake", line 6, in <module>   sys.exit(snakemake.main()) File "/Users/mtang1/.pyenv/versions/miniconda3-3.19.0/lib/python3.5/site-packages/snakemake/init.py", line   885, in main parser = get_argument_parser() File   "/Users/mtang1/.pyenv/versions/miniconda3-3.19.0/lib/python3.5/site-packages/snakemake/init.py", line 494, in get_argument_parser   const=available_cpu_count(), File "/Users/mtang1/.pyenv/versions/miniconda3-3.19.0/lib/python3.5/site-packages/snakemake/utils.py",   
 
 I have to add `import multiprocessing` in the `utils.py` to avoid that.
+[The issue](https://bitbucket.org/snakemake/snakemake/issues/324/nameerror-name-multiprocessing-is-not) was fixed in the new release.
