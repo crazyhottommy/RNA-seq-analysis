@@ -61,7 +61,7 @@ I have to add `import multiprocessing` in the `utils.py` to avoid that.
 
 ### Snakemake on HPC
 
-Samir has installed `snakemake` on nautilus using `anaconda` and set up the virtual environment by `virtualenv`.
+[Samir](https://github.com/dyndna) has installed `snakemake` on nautilus using `anaconda` and set up the virtual environment by `virtualenv`.
 To activate it:
 
 `source activate snakemake`
