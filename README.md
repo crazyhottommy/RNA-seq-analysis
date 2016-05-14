@@ -70,8 +70,8 @@ perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/j
 * [BitSeq](http://bitseq.github.io/) Transcript isoform level expression and differential expression estimation for RNA-seq
 
 **For mapping based methods, usually the raw reads are mapped to transcriptome or genome (need to model gaps by exon-exon junction), and then a gene/transcript level counts are obtained by**:     
-* [HTSeq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html)    
-* [featureCounts](http://bioinf.wehi.edu.au/featureCounts/)   
+* [HTSeq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html): one of the most popular counting tool, but it is slow.
+* [featureCounts](http://bioinf.wehi.edu.au/featureCounts/): much faster, use mulitple threads.  
 * [VERSE](https://github.com/qinzhu/VERSE): built on `featureCounts`, integrate `HTseq`.  
 * [eXpress](http://cdwscience.blogspot.com/2014/02/mrna-quantification-via-express.html). 
 
