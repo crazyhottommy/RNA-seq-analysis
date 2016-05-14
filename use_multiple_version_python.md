@@ -70,3 +70,11 @@ To inactivate it
 
 `source deactivate`
 
+### visualize `snakemake` workflow
+
+```bash
+## this will install dot 
+brew install graphviz
+
+snakemake --dag | dot | display
+```
