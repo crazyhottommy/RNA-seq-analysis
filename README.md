@@ -191,6 +191,9 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [spladder](https://github.com/ratschlab/spladder) Tool for the detection and quantification of alternative splicing events from RNA-Seq data
 * [SUPPA](https://bitbucket.org/regulatorygenomicsupf/suppa) This tool generates different Alternative Splicing (AS) events and calculates the PSI ("Percentage Spliced In") value for each event exploiting the fast quantification of transcript abundances from multiple samples
 
+### microRNAs and non-coding RNAs
+* [miARma-Seq workflow](http://miarmaseq.cbbio.es/) miRNA-Seq And RNA-Seq Multiprocess Analysis tool, a comprehensive pipeline analysis suite designed for mRNA, miRNA and circRNA identification and differential expression analysis, applicable to any sequenced organism.
+
 ### transcriptional pausing 
 
 * GRO-seq
