@@ -226,6 +226,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [Fast and accurate single-cell RNA-Seq analysis by clustering of transcript-compatibility counts](http://biorxiv.org/content/early/2016/01/15/036863) by Lior Pachter et.al
 * [cellity](https://github.com/ti243/cellity): Classification of low quality cells in scRNA-seq data using R.
 * [bioconductor: using scran to perform basic analyses of single-cell RNA-seq data](http://bioconductor.org/packages/devel/bioc/vignettes/scran/inst/doc/scran.html)
+* [scater](https://github.com/davismcc/scater): single-cell analysis toolkit for expression with R
 * [Monovar](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3835.html): single-nucleotide variant detection in single cells
 
 ### single cell RNA-seq clustering
