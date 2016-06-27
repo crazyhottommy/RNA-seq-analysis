@@ -199,6 +199,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 ### microRNAs and non-coding RNAs
 * [miARma-Seq workflow](http://miarmaseq.cbbio.es/) miRNA-Seq And RNA-Seq Multiprocess Analysis tool, a comprehensive pipeline analysis suite designed for mRNA, miRNA and circRNA identification and differential expression analysis, applicable to any sequenced organism.
 * [All the tools you need to analyse your miRNAs:[tools4miRNAs](http://tools4mirs.org/)
+* paper [Evaluation of microRNA alignment techniques](http://rnajournal.cshlp.org/content/early/2016/06/09/rna.055509.115?top=1)
 
 ### transcriptional pausing 
 
