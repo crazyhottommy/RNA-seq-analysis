@@ -231,6 +231,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [bioconductor: using scran to perform basic analyses of single-cell RNA-seq data](http://bioconductor.org/packages/devel/bioc/vignettes/scran/inst/doc/scran.html)
 * [scater](https://github.com/davismcc/scater): single-cell analysis toolkit for expression with R
 * [Monovar](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3835.html): single-nucleotide variant detection in single cells
+* [paper: Comparison of methods to detect differentially expressed genes between single-cell populations](http://m.bib.oxfordjournals.org/content/early/2016/07/02/bib.bbw057.full)
 
 ### single cell RNA-seq clustering
 
