@@ -30,4 +30,12 @@ First, you run the Salmon indexer:
 ```bash
 salmon index -t Homo_sapiens.GRCh37.75.cdna.ncrna.fa -i Homo_sapiens.GRCh37.75_quasi_index 
 ```
+It finished in a little over 10 mins.
 
+quantify the transcript:
+
+mine is single-end unstranded library
+
+```bash
+salmon quant -p 10 -i Homo_sapiens.GRCh37.75_quasi_index -l U -r my.fastq -o transcripts_quant
+```
