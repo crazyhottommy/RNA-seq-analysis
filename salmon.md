@@ -37,5 +37,5 @@ quantify the transcript:
 mine is single-end unstranded library
 
 ```bash
-salmon quant -p 10 -i Homo_sapiens.GRCh37.75_quasi_index -l U -r my.fastq -o transcripts_quant
+salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l U -r <(zcat 3R_S18_L002_R1_001.fastq.gz) -o 3R_transcripts_quant
 ```
