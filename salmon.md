@@ -38,4 +38,8 @@ mine is single-end unstranded library
 
 ```bash
 salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l U -r <(zcat 3R_S18_L002_R1_001.fastq.gz) -o 3R_transcripts_quant
+
+salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l U -r <(zcat 50R_S19_L002_R1_001.fastq.gz) -o 50R_transcripts_quant
+
+salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l U -r <(zcat WT_S17_L002_R1_001.fastq) -o WT_transcripts_quant
 ```
