@@ -58,4 +58,27 @@ salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r 
 salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat WT_S17_L002_R1_001.fastq) -o WT_transcripts_quant -g ~/annotations/Homo_sapiens.GRCh37.75.gtf
 ```
 
+### testing [kallisto](https://pachterlab.github.io/kallisto/starting) for quantification.
+Build index first:
+
+```bash
+kallisto index -i Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.idx Homo_sapiens.GRCh37.75.cdna.ncrna.fa
+```
+It took me around 15 mins to build the index.
+
+quantification:
+
+`-l, --fragment-length=DOUBLE  Estimated average fragment length`  
+`-s, --sd=DOUBLE               Estimated standard deviation of fragment length`
+                              `(default: value is estimated from the input data)`
+>In the case of single-end reads, the -l option must be used to specify the average fragment length. Typical Illumina libraries produce fragment lengths ranging from 180–200 bp but it’s best to determine this from a library quantification with an instrument such as an Agilent Bioanalyzer.
+
+```bash
+
+kallisto quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.idx -o 3R_kaliso_output --single -l 200 -s 20 3R_S18_L002_R1_001.fastq.gz
+
+kallisto quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.idx -o 50R_kaliso_output --single -l 200 -s 20 50R_S19_L002_R1_001.fastq.gz
+
+kallisto quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.idx -o WT_kaliso_output --single -l 200 -s 20 WT_S17_L002_R1_001.fastq
+```
 ### compare with Kalisto and STAR-HTseq
