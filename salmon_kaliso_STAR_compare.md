@@ -78,6 +78,10 @@ quantification:
                               `(default: value is estimated from the input data)`
 >In the case of single-end reads, the -l option must be used to specify the average fragment length. Typical Illumina libraries produce fragment lengths ranging from 180–200 bp but it’s best to determine this from a library quantification with an instrument such as an Agilent Bioanalyzer.
 
+see a question by [James](https://twitter.com/JamesPBLloyd) [on the google group](https://groups.google.com/forum/#!searchin/kallisto-sleuth-users/single$20end/kallisto-sleuth-users/VPJfzL502bw/e2JDq7ezBgAJ)
+
+>Common values for single end reads are insert length 200 and sd 20. If you have any better information, like the person who prepped the library or better yet, data from bioanalyzer that will of course be better. 
+
 ```bash
 
 kallisto quant -t 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.idx -o 3R_kaliso_output --single -l 200 -s 20 3R_S18_L002_R1_001.fastq.gz
