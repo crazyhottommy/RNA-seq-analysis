@@ -57,6 +57,11 @@ salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r 
 
 salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat WT_S17_L002_R1_001.fastq) -o WT_transcripts_quant -g ~/annotations/Homo_sapiens.GRCh37.75.gtf
 ```
+It is recommended using [tximport](http://bioconductor.org/packages/release/bioc/html/tximport.html) to get the gene-level quantification. I asked the difference between `tximport` and `salmon quant -g`.
+The developer of salmon @[Rob Patro](https://twitter.com/nomad421) answered:
+>Main diffs I can think of (1) in R   
+(2) integrated with DESeq2  
+(3) Can derive multi-sample effective gene lengths
 
 ### testing [kallisto](https://pachterlab.github.io/kallisto/starting) for quantification.
 Build index first:
