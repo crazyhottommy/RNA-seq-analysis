@@ -92,4 +92,6 @@ kallisto quant -t 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.
 
 kallisto quant -t 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.idx -o WT_kaliso_output --single -l 200 -s 20 WT_S17_L002_R1_001.fastq.gz
 ```
+Finished in ~6 mins. again, blazing fast as `Salmon` does.
+
 ### compare with Kalisto and STAR-HTseq
