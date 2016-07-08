@@ -1,3 +1,16 @@
+### Why I am testing again?
+
+I know there are papers comparing different RNA-seq pipelines. For example:
+[A benchmark for RNA-seq quantification pipelines](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0940-1)
+
+I just got several RNA-seq data to play with, and I think it is a good time-point for me to get my hands wet on those RNA-seq quantification tools (especially those alignment-free ones) and get a personal idea of how different tools perform. I am not 
+doing bench-marking, as one should simulate the RNA-seq reads by e.g. [polyester](https://github.com/alyssafrazee/polyester) to have 
+the ground truth.
+
+Choosing alignment based tools (such as tophat, STAR, bowtie, HISAT) or alignment free ones depends on the purpose of your study. `Salmon` and `kallisto` requires the reads "pesudo-map" to the transcriptome, so one has to provide a fasta file containing all the transcripts you want to quantify. Therefore, if you want to find novel transcripts, you probably should go with the alignment based methods. It is also shown recently that [Widespread intron retention diversifies most cancer transcriptomes](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-015-0168-9). If you want to do similar things, you need to use mappers with the genome (not the transcriptiome) as a reference.
+
+Now, let's begin my analysis.
+
 ### Testing [Salmon](https://github.com/COMBINE-lab/salmon) for RNA-seq quantification
 
 Download the binary(v0.6.0) by:
