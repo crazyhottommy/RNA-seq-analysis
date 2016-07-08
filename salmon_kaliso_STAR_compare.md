@@ -112,3 +112,5 @@ kallisto quant -t 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.
 Finished in ~6 mins. again, blazing fast as `Salmon` does.
 
 ### compare with Kalisto and STAR-HTseq
+
+[convert counts to TPM](https://www.biostars.org/p/171766/)
