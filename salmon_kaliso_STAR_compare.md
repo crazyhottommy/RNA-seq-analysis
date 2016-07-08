@@ -77,6 +77,7 @@ The developer of salmon @[Rob Patro](https://twitter.com/nomad421) answered:
 >Main diffs I can think of (1) in R   
 (2) integrated with DESeq2  
 (3) Can derive multi-sample effective gene lengths
+Further reading [Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v1)
 
 ### testing [kallisto](https://pachterlab.github.io/kallisto/starting) for quantification.
 Build index first:
