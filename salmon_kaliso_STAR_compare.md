@@ -55,7 +55,7 @@ It finished in a little over 10 mins.
 
 quantify the transcript:
 
-library is single-end stranded, reads from reverse strand. so specify `-l SR`. read [salmon doc](http://salmon.readthedocs.io/en/latest/library_type.html) for different library types. I especially like the figure representation below:  
+The RNA-seq library I am analyzing is single-end stranded, reads from reverse strand. so I specified `-l SR`. read [salmon doc](http://salmon.readthedocs.io/en/latest/library_type.html) for different library types. I especially like the figure representation below:  
 ![](https://cloud.githubusercontent.com/assets/4106146/16705915/d3bfe62c-455e-11e6-8c3c-68f94a34a1ba.png)
 
 ```bash
