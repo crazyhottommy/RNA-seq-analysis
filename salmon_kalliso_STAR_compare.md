@@ -68,16 +68,17 @@ salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r 
 The quantification finishes within minutes!
 
 ### quantification in gene level
-Salmon can also give gene-level quantification as long as feed a gtf file 
+Salmon can also give gene-level quantification as long as feed a gtf file. In addtion, I specify the fragment length to be 200 bp
+and standard deviation of 20 (default 80). 
 
 ```bash
 wget ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz
 
-salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat 3R_S18_L002_R1_001.fastq.gz) -o 3R_transcripts_quant -g ~/annotations/Homo_sapiens.GRCh37.75.gtf
+salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat 3R_S18_L002_R1_001.fastq.gz) -o 3R_transcripts_quant -g ~/annotations/Homo_sapiens.GRCh37.75.gtf --fldMean 200 --fldSD 20
 
-salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat 50R_S19_L002_R1_001.fastq.gz) -o 50R_transcripts_quant -g ~/annotations/Homo_sapiens.GRCh37.75.gtf
+salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat 50R_S19_L002_R1_001.fastq.gz) -o 50R_transcripts_quant -g ~/annotations/Homo_sapiens.GRCh37.75.gtf --fldMean 200 --fldSD 20
 
-salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat WT_S17_L002_R1_001.fastq.gz) -o WT_transcripts_quant -g ~/annotations/Homo_sapiens.GRCh37.75.gtf
+salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat WT_S17_L002_R1_001.fastq.gz) -o WT_transcripts_quant -g ~/annotations/Homo_sapiens.GRCh37.75.gtf --fldMean 200 --fldSD 20
 ```
 It is recommended using [tximport](http://bioconductor.org/packages/release/bioc/html/tximport.html) to get the gene-level quantification. I asked the difference between `tximport` and `salmon quant -g`.
 The developer of salmon @[Rob Patro](https://twitter.com/nomad421) answered:
@@ -182,7 +183,7 @@ counts_to_tpm <- function(counts, featureLength, meanFragmentLength) {
   return(tpm)
 }
 ```
-**what is effective length of the feature?**  
+### what is effective length of the feature?
 
 I traced back to this paper by Lior pachter group [Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation](http://www.nature.com/nbt/journal/v28/n5/full/nbt.1621.html).
 
@@ -193,6 +194,8 @@ It is quite mathematical, but the [general idea is](https://groups.google.com/fo
 >If we take the fragment length to be fixed, then the effective length is how many fragments can occur in the transcript. This turns out to be length - frag_len +1. The number of fragments coming from a transcript will be proportional to this number, regardless of whether you sequenced one or both ends of the fragment. In turn, when it comes to probabilistically assigning reads to transcripts the effective length plays a similar role again. Thus for short transcripts, there can be quite a difference between two fragment lengths.
 To go back to your example if you have transcript of length 310, your effective length is 10 (if fragment length is 300) or 160 (if fragment length is 150) in either case, which explains the discrepancy you see.
 
+From @Rob
+>The effective length is computed by using the fragment length distribution to determine the effective number of positions that can be sampled on each transcript. You can think of this as convolving the fragment length distribution with the characteristic function (the function that simply takes a value of 1) over the transcript. For example if we observe fragments of length 50 --- 1000, a position more than 1000 bases from the end of the transcript will contribute a value of 1 to the effective length, while a position 150 bases will contribute a value of F(150), where F is the cumulative distribution function of the fragment length distribution. For **single end data, where we can't learn an empirical FLD**, we use a gaussian whose mean and standard deviation can be set with --fldMean and --fldSD respectively.
 
 
 
