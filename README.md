@@ -169,6 +169,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [ExpressionAtlas bioconductor package](http://www.bioconductor.org/packages/release/bioc/html/ExpressionAtlas.html):
 >This package is for searching for datasets in EMBL-EBI Expression Atlas, and downloading them into R for further analysis. Each Expression Atlas dataset is represented as a SimpleList object with one element per platform. Sequencing data is contained in a SummarizedExperiment object, while microarray data is contained in an ExpressionSet or MAList object.
 * [GTEx Resources in the UCSC Browser](http://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=gtexGene) [signal track on trackhub](http://genome.ucsc.edu/cgi-bin/hgHubConnect)
+* [batch recompute ~20,000 RNA-seq samples from larget sequencing project such as TCGA, TARGET and GETEX](https://genome-cancer.soe.ucsc.edu/proj/site/xena/datapages/?host=https://toil.xenahubs.net). Used `hg38` and `gencode v21` as annotation.
 
 ### Gene Set enrichment analysis
 * [Gene set analysis approaches for RNA-seq data: performance evaluation and application guideline](http://bib.oxfordjournals.org/content/early/2015/09/04/bib.bbv069.long)  
