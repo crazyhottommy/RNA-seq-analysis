@@ -68,8 +68,7 @@ salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r 
 The quantification finishes within minutes!
 
 ### quantification in gene level
-Salmon can also give gene-level quantification as long as feed a gtf file. In addtion, I specify the fragment length to be 200 bp
-and standard deviation of 20 (default 80). 
+Salmon can also give gene-level quantification as long as feed a gtf file. In addtion, I specify the fragment length to be 200 bp (default) and standard deviation of 20 (default 80). Details [here](https://github.com/crazyhottommy/RNA-seq-analysis/blob/master/salmon_kalliso_STAR_compare.md#what-is-effective-length-of-the-feature). For paired-end RNA-seq, the fragment length distribution can be infered from the fastq files, but for single-end data, it needs to be specified. 
 
 ```bash
 wget ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz
