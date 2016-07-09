@@ -117,12 +117,12 @@ kallisto quant -t 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.
 ```
 Finished in ~6 mins. again, blazing fast as `Salmon` does.
 
-### compare with Kalisto and STAR-HTseq
+### compare salmon, kallisto and STAR-HTseq
 
 My colleage @samir processed the same data using STAR-HTseq piepline, and it gives the raw counts for each gene. He is very skepitcal 
-about transcript level quantification and would focus on gene-level for now. What adds the complexity a bit is that he used gencode v19 as annotation and the gene name has a dot + digits in the end of each gene. e.g. ENSG00000000003.10  vs ENSG00000000003 in gtf files downloaded from ensemble. I will need to get rid of the digits in the end.
+about transcript level quantification and would focus on gene-level for now. What adds the complexity a bit is that he used `gencode v19` as annotation and the gene name has a dot + digits in the end of each gene. e.g. `ENSG00000000003.10`  vs `ENSG00000000003` in gtf files downloaded from ensemble. I will need to get rid of the digits in the end.
 
-I will need to convert the raw counts from the STAR-HTseq pipeline to TPM for comparison as `Salmon` and `kallisto` output TPM and estimated counts. Read the post: [convert counts to TPM](https://www.biostars.org/p/171766/)
+I will need to convert the raw counts from the `STAR-HTseq` pipeline to TPM for comparison as `Salmon` and `kallisto` output TPM and estimated counts. Read the post: [convert counts to TPM](https://www.biostars.org/p/171766/)
 
 I will need to quote from [this](https://statquest.org/2015/07/09/rpkm-fpkm-and-tpm-clearly-explained/) blog post on explaning differences among RPKM, FPKM and TMP.
 
