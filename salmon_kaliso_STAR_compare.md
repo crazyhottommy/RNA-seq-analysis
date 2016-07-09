@@ -13,6 +13,12 @@ Choosing alignment based tools (such as tophat, STAR, bowtie, HISAT) or alignmen
 
 Now, let's begin my analysis.
 
+I skipped quality trimming for this analysis. As it was shown that trimming may not necessary to be a good thing:  
+[Trimming of sequence reads alters RNA-Seq gene expression estimates](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0956-2)  
+For assembly [On the optimal trimming of high-throughput mRNA sequence data](http://journal.frontiersin.org/article/10.3389/fgene.2014.00013/full).  
+However, as a rule of thumb, one needs to check reads quality of any sequencing data sets. e.g. [RSeQC: An RNA-seq Quality Control Package](http://rseqc.sourceforge.net/)
+
+
 ### Testing [Salmon](https://github.com/COMBINE-lab/salmon) for RNA-seq quantification
 
 Download the binary(v0.6.0) by:
@@ -113,4 +119,27 @@ Finished in ~6 mins. again, blazing fast as `Salmon` does.
 
 ### compare with Kalisto and STAR-HTseq
 
-[convert counts to TPM](https://www.biostars.org/p/171766/)
+My colleage @samir processed the same data using STAR-HTseq piepline, and it gives the raw counts for each gene. He is very skepitcal 
+about transcript level quantification and would focus on gene-level for now. What adds the complexity a bit is that he used gencode v19 as annotation and the gene name has a dot + digits in the end of each gene. e.g. ENSG00000000003.10  vs ENSG00000000003 in gtf files downloaded from ensemble. I will need to get rid of the digits in the end.
+
+I will need to convert the raw counts from the STAR-HTseq pipeline to TPM for comparison as `Salmon` and `kallisto` output TPM and estimated counts. Read the post: [convert counts to TPM](https://www.biostars.org/p/171766/)
+
+I will need to quote from [this](https://statquest.org/2015/07/09/rpkm-fpkm-and-tpm-clearly-explained/) blog post on explaning differences among RPKM, FPKM and TMP.
+
+>These three metrics attempt to normalize for sequencing depth and gene length. Here’s how you do it for RPKM:
+
+1. Count up the total reads in a sample and divide that number by 1,000,000 – this is our “per million” scaling factor.  
+2. Divide the read counts by the “per million” scaling factor. This normalizes for sequencing depth, giving you reads per million (RPM)  
+3. Divide the RPM values by the length of the gene, in kilobases. This gives you RPKM.
+
+>FPKM is very similar to RPKM. RPKM was made for single-end RNA-seq, where every read corresponded to a single fragment that was sequenced. FPKM was made for paired-end RNA-seq
+
+>TPM is very similar to RPKM and FPKM. The only difference is the order of operations. Here’s how you calculate TPM:
+
+1. Divide the read counts by the length of each gene in kilobases. This gives you reads per kilobase (RPK).
+2. Count up all the RPK values in a sample and divide this number by 1,000,000. This is your “per million” scaling factor.
+3. Divide the RPK values by the “per million” scaling factor. This gives you TPM.
+
+>So you see, when calculating TPM, the only difference is that you normalize for gene length first, and then normalize for sequencing depth second. However, the effects of this difference are quite profound.
+
+>When you use TPM, the sum of all TPMs in each sample are the same. This makes it easier to compare the proportion of reads that mapped to a gene in each sample. In contrast, with RPKM and FPKM, the sum of the normalized reads in each sample may be different, and this makes it harder to compare samples directly.
