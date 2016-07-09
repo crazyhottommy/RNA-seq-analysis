@@ -16,7 +16,7 @@ Now, let's begin my analysis.
 I skipped quality trimming for this analysis. As it was shown that trimming may not necessary to be a good thing:  
 [Trimming of sequence reads alters RNA-Seq gene expression estimates](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0956-2)  
 For assembly [On the optimal trimming of high-throughput mRNA sequence data](http://journal.frontiersin.org/article/10.3389/fgene.2014.00013/full).  
-However, as a rule of thumb, one needs to check reads quality of any sequencing data sets. e.g. [RSeQC: An RNA-seq Quality Control Package](http://rseqc.sourceforge.net/)
+However, as a rule of thumb, one needs to always check reads quality of any sequencing data sets. e.g. [RSeQC: An RNA-seq Quality Control Package](http://rseqc.sourceforge.net/)
 
 
 ### Testing [Salmon](https://github.com/COMBINE-lab/salmon) for RNA-seq quantification
