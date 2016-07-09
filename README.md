@@ -36,7 +36,8 @@
 
 * [QoRTs](http://hartleys.github.io/QoRTs/): a comprehensive toolset for quality control and data processing of RNA-Seq experiments  
 * [QUaCRS](http://bioserv.mps.ohio-state.edu/QuaCRS/index.php/pages/view/downloads)    
-* [RSeQC](http://rseqc.sourceforge.net/) RNA-seq data QC  
+* [RSeQC](http://rseqc.sourceforge.net/) RNA-seq data QC
+* [RNA-SeqQC](https://www.broadinstitute.org/cancer/cga/rna-seqc)
 
 ### Normalization, quantification, and differential expression
 
@@ -46,6 +47,7 @@
 *  [Comparing the normalization methods for the differential analysis of Illumina high-throughput RNA-Seq data](http://www.biomedcentral.com/1471-2105/16/347)
 *  paper: [Union Exon Based Approach for RNA-Seq Gene Quantification: To Be or Not to Be?](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141910)  
 *  [paper: The impact of amplification on differential expression analyses by RNA-seq](http://biorxiv.org/content/early/2015/12/28/035493) Computational removal of read duplicates is not recommended for differential expression analysis.
+*  [paper: Normalization of RNA-seq data using factor analysis of control genes or samples](https://www.ncbi.nlm.nih.gov/pubmed/25150836 "Risso D et al. Nat Biotechnol 2014"): About spike-ins control and R normalization strategy - remove unwanted variation (RUV).
 
 #### Traditional way of RNA-seq analysis 
 
