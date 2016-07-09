@@ -55,7 +55,8 @@ It finished in a little over 10 mins.
 
 quantify the transcript:
 
-library is single-end stranded, reads from reverse strand
+library is single-end stranded, reads from reverse strand. so specify `-l SR`. read [salmon doc](http://salmon.readthedocs.io/en/latest/library_type.html) for different library types. I especially like the figure representation below:  
+![](https://cloud.githubusercontent.com/assets/4106146/16705915/d3bfe62c-455e-11e6-8c3c-68f94a34a1ba.png)
 
 ```bash
 salmon quant -p 10 -i ~/annotations/Homo_sapiens.GRCh37.75_quasi_index -l SR -r <(zcat 3R_S18_L002_R1_001.fastq.gz) -o 3R_transcripts_quant
