@@ -189,9 +189,7 @@ countDf$effCounts <- with(countDf, countToEffCounts(count, length, effLength))
 My colleage @samir processed the same data using STAR-HTseq piepline, and it gives the raw counts for each gene. He is very skepitcal 
 about transcript level quantification and would focus on gene-level for now. What adds the complexity a bit is that he used `gencode v19` as annotation and the gene name has a dot + digits in the end of each gene. e.g. `ENSG00000000003.10`  vs `ENSG00000000003` in gtf files downloaded from ensemble. I will need to get rid of the digits in the end.
 
-I will need to convert the raw counts from the `STAR-HTseq` pipeline to TPM for comparison as `Salmon` and `kallisto` output TPM and estimated counts. Read the post: [convert counts to TPM](https://www.biostars.org/p/171766/)
-
-[Kamil Slowikowski](https://gist.github.com/slowkow/c6ab0348747f86e2748b) wrote a function to convert counts to TPM, and the function involves an effective length of the features.
+I will need to convert the raw counts from the `STAR-HTseq` pipeline to TPM for comparison as `Salmon` and `kallisto` output TPM and estimated counts. Read the post: [convert counts to TPM](https://www.biostars.org/p/171766/). [Kamil Slowikowski](https://gist.github.com/slowkow/c6ab0348747f86e2748b) wrote a function to convert counts to TPM, and the function involves an effective length of the features.
 
 ### what is effective length of the feature?
 
