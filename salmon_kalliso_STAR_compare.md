@@ -314,3 +314,5 @@ tx.kallisto <- tximport(kallisto.files, type = "kallisto", tx2gene = tx2gene,
 tx.salmon <- tximport(salmon.files, type = "salmon", tx2gene = tx2gene, 
                       reader = read_tsv, countsFromAbundance = "lengthScaledTPM")
 ```
+
+### compare STAR-HTseq, kallisto and salmon
