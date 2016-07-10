@@ -148,43 +148,8 @@ I will need to quote from [this](https://statquest.org/2015/07/09/rpkm-fpkm-and-
 
 >When you use TPM, the sum of all TPMs in each sample are the same. This makes it easier to compare the proportion of reads that mapped to a gene in each sample. In contrast, with RPKM and FPKM, the sum of the normalized reads in each sample may be different, and this makes it harder to compare samples directly.
 
-The function written by [Kamil Slowikowski](https://gist.github.com/slowkow/c6ab0348747f86e2748b)
+[Kamil Slowikowski](https://gist.github.com/slowkow/c6ab0348747f86e2748b) wrote a function to convert counts to TPM, and the function involves an effective length of the features.
 
-```R
-#' @param counts A numeric matrix of raw feature counts i.e.
-#'  fragments assigned to each gene.
-#' @param featureLength A numeric vector with feature lengths.
-#' @param meanFragmentLength A numeric vector with mean fragment lengths.
-#' @return tpm A numeric matrix normalized by library size and feature length.
-counts_to_tpm <- function(counts, featureLength, meanFragmentLength) {
-  
-  # Ensure valid arguments.
-  stopifnot(length(featureLength) == nrow(counts))
-  stopifnot(length(meanFragmentLength) == ncol(counts))
-  
-  # Compute effective lengths of features in each library.
-  effLen <- do.call(cbind, lapply(1:ncol(counts), function(i) {
-    featureLength - meanFragmentLength[i] + 1
-  }))
-  
-  # Exclude genes with length less than the mean fragment length.
-  idx <- apply(effLen, 1, function(x) min(x) > 1)
-  counts <- counts[idx,]
-  effLen <- effLen[idx,]
-  featureLength <- featureLength[idx]
-  
-  # Process one column at a time.
-  tpm <- do.call(cbind, lapply(1:ncol(counts), function(i) {
-    rate = log(counts[,i]) - log(effLen[,i])
-    denom = log(sum(exp(rate)))
-    exp(rate - denom + log(1e6))
-  }))
-
-  # Copy the column names from the original matrix.
-  colnames(tpm) <- colnames(counts)
-  return(tpm)
-}
-```
 ### what is effective length of the feature?
 
 I traced back to this paper by Lior pachter group [Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation](http://www.nature.com/nbt/journal/v28/n5/full/nbt.1621.html).
