@@ -130,6 +130,48 @@ I will need to convert the raw counts from the `STAR-HTseq` pipeline to TPM for 
 
 Before going any further, make sure you read two posts:  
 [What the FPKM? A review of RNA-Seq expression units](https://haroldpimentel.wordpress.com/2014/05/08/what-the-fpkm-a-review-rna-seq-expression-units/)  
+
+R code from the above post: 
+
+```r
+countToTpm <- function(counts, effLen)
+{
+    rate <- log(counts) - log(effLen)
+    denom <- log(sum(exp(rate)))
+    exp(rate - denom + log(1e6))
+}
+ 
+countToFpkm <- function(counts, effLen)
+{
+    N <- sum(counts)
+    exp( log(counts) + log(1e9) - log(effLen) - log(N) )
+}
+ 
+fpkmToTpm <- function(fpkm)
+{
+    exp(log(fpkm) - log(sum(fpkm)) + log(1e6))
+}
+ 
+countToEffCounts <- function(counts, len, effLen)
+{
+    counts * (len / effLen)
+}
+ 
+################################################################################
+# An example
+################################################################################
+cnts <- c(4250, 3300, 200, 1750, 50, 0)
+lens <- c(900, 1020, 2000, 770, 3000, 1777)
+countDf <- data.frame(count = cnts, length = lens)
+ 
+# assume a mean(FLD) = 203.7
+countDf$effLength <- countDf$length - 203.7 + 1
+countDf$tpm <- with(countDf, countToTpm(count, effLength))
+countDf$fpkm <- with(countDf, countToFpkm(count, effLength))
+with(countDf, all.equal(tpm, fpkmToTpm(fpkm)))
+countDf$effCounts <- with(countDf, countToEffCounts(count, length, effLength))
+```
+
 [In RNA-Seq, 2 != 2: Between-sample normalization](https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/)  
 
 I will need to quote from [this](https://statquest.org/2015/07/09/rpkm-fpkm-and-tpm-clearly-explained/) blog post on explaning technical differences among RPKM, FPKM and TMP.
