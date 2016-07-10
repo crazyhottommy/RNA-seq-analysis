@@ -274,5 +274,43 @@ TPM.from.HTSeq<- counts_to_tpm(counts, featureLength, meanFragmentLength)
 
 ```
 
+### Import salmon and kallisto transcript level 
 
+Use `tximport` to import `salmon` and `kallisto` transcript level quantification
 
+```{r}
+#source("https://bioconductor.org/biocLite.R")
+#biocLite("EnsDb.Hsapiens.v75")
+
+#create a tx2gene.txt table
+library(EnsDb.Hsapiens.v75)
+edb <- EnsDb.Hsapiens.v75
+
+Tx.ensemble <- transcripts(edb,
+          columns = c("tx_id", "gene_id", "gene_name"),
+          return.type = "DataFrame")
+nrow(Tx.ensemble)
+
+tx2gene<- Tx.ensemble[,c(1,2)]
+
+samples<- c("WT-30393468", "3R-30390482", "50R-30393469")
+salmon.dir<- c("WT_transcripts_quant", "3R_transcripts_quant", "50R_transcripts_quant")
+kallisto.dir<- c("WT_kaliso_output", "3R_kaliso_output", "50R_kaliso_output")
+
+kallisto.files <- file.path(samples, kallisto.dir, "abundance.tsv")
+names(kallisto.files)<- c("kallisto.WT", "kallisto.3R", "kallisto.50R")
+
+salmon.files<- file.path(samples, salmon.dir, "quant.sf")
+names(salmon.files)<- c("salmon.WT", "salmon.3R", "salmon.50R")
+
+all(file.exists(kallisto.files))
+all(file.exists(salmon.files))
+
+library(tximport)
+library(readr)
+
+tx.kallisto <- tximport(kallisto.files, type = "kallisto", tx2gene = tx2gene, 
+                        reader = read_tsv, countsFromAbundance = "lengthScaledTPM")
+tx.salmon <- tximport(salmon.files, type = "salmon", tx2gene = tx2gene, 
+                      reader = read_tsv, countsFromAbundance = "lengthScaledTPM")
+```
