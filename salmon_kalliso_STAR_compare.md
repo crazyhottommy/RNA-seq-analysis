@@ -128,7 +128,11 @@ about transcript level quantification and would focus on gene-level for now. Wha
 
 I will need to convert the raw counts from the `STAR-HTseq` pipeline to TPM for comparison as `Salmon` and `kallisto` output TPM and estimated counts. Read the post: [convert counts to TPM](https://www.biostars.org/p/171766/)
 
-I will need to quote from [this](https://statquest.org/2015/07/09/rpkm-fpkm-and-tpm-clearly-explained/) blog post on explaning differences among RPKM, FPKM and TMP.
+Before going any further, make sure you read two posts:  
+[What the FPKM? A review of RNA-Seq expression units](https://haroldpimentel.wordpress.com/2014/05/08/what-the-fpkm-a-review-rna-seq-expression-units/)  
+[In RNA-Seq, 2 != 2: Between-sample normalization](https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/)  
+
+I will need to quote from [this](https://statquest.org/2015/07/09/rpkm-fpkm-and-tpm-clearly-explained/) blog post on explaning technical differences among RPKM, FPKM and TMP.
 
 >These three metrics attempt to normalize for sequencing depth and gene length. Here’s how you do it for RPKM:
 
