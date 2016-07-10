@@ -1,6 +1,6 @@
 ### Why I am testing again?
 
-I know there are papers/posts comparing different RNA-seq pipelines. For example:
+I know there are papers/posts comparing different RNA-seq pipelines. For example:  
 [A benchmark for RNA-seq quantification pipelines](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0940-1)  
 [Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v1#T2)  
 [“ALIGNMENT FREE” TRANSCRIPTOME QUANTIFICATION](https://sjcockell.me/2015/05/18/alignment-free-transcriptome-quantification/)  
