@@ -121,7 +121,7 @@ kallisto quant -t 10 -i ~/annotations/Homo_sapiens.GRCh37.75.cdna.ncrna.kalisto.
 ```
 Finished in ~6 mins. again, blazing fast as `Salmon` does.
 
-### compare salmon, kallisto and STAR-HTseq
+### counts versus TPM/RPKM/FPKM
 
 My colleage @samir processed the same data using STAR-HTseq piepline, and it gives the raw counts for each gene. He is very skepitcal 
 about transcript level quantification and would focus on gene-level for now. What adds the complexity a bit is that he used `gencode v19` as annotation and the gene name has a dot + digits in the end of each gene. e.g. `ENSG00000000003.10`  vs `ENSG00000000003` in gtf files downloaded from ensemble. I will need to get rid of the digits in the end.
@@ -199,6 +199,80 @@ To go back to your example if you have transcript of length 310, your effective 
 From @Rob
 >The effective length is computed by using the fragment length distribution to determine the effective number of positions that can be sampled on each transcript. You can think of this as convolving the fragment length distribution with the characteristic function (the function that simply takes a value of 1) over the transcript. For example if we observe fragments of length 50 --- 1000, a position more than 1000 bases from the end of the transcript will contribute a value of 1 to the effective length, while a position 150 bases will contribute a value of F(150), where F is the cumulative distribution function of the fragment length distribution. For **single end data, where we can't learn an empirical FLD**, we use a gaussian whose mean and standard deviation can be set with --fldMean and --fldSD respectively.
 
+### R scripts to convert HTseq counts to TPM
+
+```{r}
+library(dplyr)
+setwd("/Volumes/mdarisngc03.mdanderson.edu/scratch/RNA-seq-26357338/")
+
+list.files()
+
+counts.3R<- read.table("STAR_3R-30390482_htseq.cnt", sep="\t", header=F, stringsAsFactors = F)
+counts.50R<- read.table("STAR_50R-30393469_htseq.cnt", sep="\t", header=F, stringsAsFactors = F)
+counts.WT<- read.table("STAR_WT-30393468_htseq.cnt", sep="\t", header=F, stringsAsFactors = F)
+
+counts.df<- cbind(counts.WT, counts.3R, counts.50R)
+counts.df<- counts.df[, c(1,2,4,6)]
+names(counts.df)<- c("gene_name", "HTseq.WT", "HTseq.3R", "HTseq.50R")
+
+## get rid of the digits in the end of the gene_name
+counts.df<- counts.df %>% mutate(gene_name = gsub("\\.[0-9]+", "", gene_name)) 
+
+```
+
+To convert the raw counts from HTSeq (gencode v19 as annotation), I will need the length of each gene. Although one can compute the gene length from the gtf files, the gene-level output of `Salmon` has already computed it for me. I will just need to "borrow" from there.
+
+```{r}
+WT.Salmon.gene.quant<- read.table("./WT-30393468/WT_transcripts_quant/quant.genes.sf", sep="\t",
+                                  header=T, stringsAsFactors = F)
+gene.length<- dplyr::select(WT.Salmon.gene.quant, c(Name, Length))
+
+counts.df<- inner_join(counts.df, gene.length, by =c("gene_name"="Name")) 
+```
+
+`counts_to_tpm` function from  https://www.biostars.org/p/171766/
+
+```{r}
+counts_to_tpm <- function(counts, featureLength, meanFragmentLength) {
+  
+  # Ensure valid arguments.
+  stopifnot(length(featureLength) == nrow(counts))
+  stopifnot(length(meanFragmentLength) == ncol(counts))
+  
+  # Compute effective lengths of features in each library.
+  effLen <- do.call(cbind, lapply(1:ncol(counts), function(i) {
+    featureLength - meanFragmentLength[i] + 1
+  }))
+  
+  # Exclude genes with length less than the mean fragment length.
+  idx <- apply(effLen, 1, function(x) min(x) > 1)
+  counts <- counts[idx,]
+  effLen <- effLen[idx,]
+  featureLength <- featureLength[idx]
+  
+  # Process one column at a time.
+  tpm <- do.call(cbind, lapply(1:ncol(counts), function(i) {
+    rate = log(counts[,i]) - log(effLen[,i])
+    denom = log(sum(exp(rate)))
+    exp(rate - denom + log(1e6))
+  }))
+
+  # Copy the column names from the original matrix.
+  colnames(tpm) <- colnames(counts)
+  return(tpm)
+}
+
+featureLength<- counts.df$Length
+
+## fragment length is 200bp 
+meanFragmentLength<- c(200, 200, 200)
+
+counts<- as.matrix(counts.df[,c(2,3,4)])
+rownames(counts)<- counts.df$gene_name
+
+TPM.from.HTSeq<- counts_to_tpm(counts, featureLength, meanFragmentLength)
+
+```
 
 
 
