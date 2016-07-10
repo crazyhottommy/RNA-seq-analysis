@@ -1,9 +1,12 @@
 ### Why I am testing again?
 
-I know there are papers comparing different RNA-seq pipelines. For example:
+I know there are papers/posts comparing different RNA-seq pipelines. For example:
 [A benchmark for RNA-seq quantification pipelines](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0940-1)
+[Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v1#T2)  
+[“ALIGNMENT FREE” TRANSCRIPTOME QUANTIFICATION](https://sjcockell.me/2015/05/18/alignment-free-transcriptome-quantification/)  
+and [many others](https://github.com/crazyhottommy/RNA-seq-analysis#blog-posts-on-kallisto)
 
-I just got several RNA-seq data to play with, and I think it is a good time-point for me to get my hands wet on those RNA-seq quantification tools (especially those alignment-free ones) and get a personal idea of how different tools perform. I am not 
+However, I just got several RNA-seq data to play with, and I think it is a good time-point for me to get my hands wet on those RNA-seq quantification tools (especially those alignment-free ones) and get a **personal** idea of how different tools perform. I am not 
 doing bench-marking, as one should simulate the RNA-seq reads by e.g. [polyester](https://github.com/alyssafrazee/polyester) to have 
 the ground truth.
 
