@@ -207,7 +207,7 @@ From [Harold Pimentel](https://twitter.com/hjpimentel)'s post above. He is in Li
 > Effective length refers to the number of possible start sites a feature could have generated a fragment of that particular length. In practice, the effective length is usually computed as:
 ![](https://s0.wp.com/latex.php?latex=%5Cwidetilde%7Bl%7D_i+%3D+l_i+-+%5Cmu_%7BFLD%7D+%2B+1&bg=ffffff&fg=000000&s=0&zoom=2)
 
->where \mu_{FLD} is the mean of the fragment length distribution which was learned from the aligned read. If the abundance estimation method you’re using incorporates sequence bias modeling (such as eXpress or Cufflinks), the bias is often incorporated into the effective length by making the feature shorter or longer depending on the effect of the bias.
+>where uFDL is the mean of the fragment length distribution which was learned from the aligned read. If the abundance estimation method you’re using incorporates sequence bias modeling (such as eXpress or Cufflinks), the bias is often incorporated into the effective length by making the feature shorter or longer depending on the effect of the bias.
 
 ### R scripts to convert HTseq counts to TPM
 
