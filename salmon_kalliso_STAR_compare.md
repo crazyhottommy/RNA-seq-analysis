@@ -195,8 +195,6 @@ I will need to convert the raw counts from the `STAR-HTseq` pipeline to TPM for 
 
 I traced back to this paper by Lior pachter group [Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation](http://www.nature.com/nbt/journal/v28/n5/full/nbt.1621.html).
 
-![](https://cloud.githubusercontent.com/assets/4106146/16706030/c12d39de-4562-11e6-9622-6720a55e4a28.png)
-
 It is quite mathematical, but the [general idea is](https://groups.google.com/forum/#!searchin/kallisto-sleuth-users/Effective$20Length/kallisto-sleuth-users/SlJWXFMEEiM/ftkrtPZyAQAJ):
 
 >If we take the fragment length to be fixed, then the effective length is how many fragments can occur in the transcript. This turns out to be length - frag_len +1. The number of fragments coming from a transcript will be proportional to this number, regardless of whether you sequenced one or both ends of the fragment. In turn, when it comes to probabilistically assigning reads to transcripts the effective length plays a similar role again. Thus for short transcripts, there can be quite a difference between two fragment lengths.
@@ -204,6 +202,12 @@ To go back to your example if you have transcript of length 310, your effective 
 
 From @Rob
 >The effective length is computed by using the fragment length distribution to determine the effective number of positions that can be sampled on each transcript. You can think of this as convolving the fragment length distribution with the characteristic function (the function that simply takes a value of 1) over the transcript. For example if we observe fragments of length 50 --- 1000, a position more than 1000 bases from the end of the transcript will contribute a value of 1 to the effective length, while a position 150 bases will contribute a value of F(150), where F is the cumulative distribution function of the fragment length distribution. For **single end data, where we can't learn an empirical FLD**, we use a gaussian whose mean and standard deviation can be set with --fldMean and --fldSD respectively.
+
+From [Harold Pimentel](https://twitter.com/hjpimentel)'s post above. He is in Lior Pachter's group.
+> Effective length refers to the number of possible start sites a feature could have generated a fragment of that particular length. In practice, the effective length is usually computed as:
+![](https://s0.wp.com/latex.php?latex=%5Cwidetilde%7Bl%7D_i+%3D+l_i+-+%5Cmu_%7BFLD%7D+%2B+1&bg=ffffff&fg=000000&s=0&zoom=2)
+
+>where \mu_{FLD} is the mean of the fragment length distribution which was learned from the aligned read. If the abundance estimation method you’re using incorporates sequence bias modeling (such as eXpress or Cufflinks), the bias is often incorporated into the effective length by making the feature shorter or longer depending on the effect of the bias.
 
 ### R scripts to convert HTseq counts to TPM
 
