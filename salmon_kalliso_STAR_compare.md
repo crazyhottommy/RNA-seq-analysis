@@ -400,6 +400,7 @@ cor(log2(HTSeq.salmon.kallisto.TPM$salmon.WT+1), log2(HTSeq.salmon.kallisto.TPM$
 
 Kallisto and Salmon seems to have very tight correlation. STAR-HTSeq based RNA-seq pipeline is a bit off when correlated with 
 the other two. Note that I did not do adaptor and low qualit base trimming, STAR may discard some informative reads. In contrast, salmon (and kallisto?) is very robust to quality and adapter trimming. If you have other thoughs, please comment :)
+I am sorry that my analysis is not fully reproducible as I can not share the data now.
 
 by [Rob](https://groups.google.com/forum/#!topic/sailfish-users/st918qtdM34)
 >One of the benefits of the quasi-mapping approach taken by sailfish is that it is rather robust to quality and adapter trimming.  One way you can assess this is by looking at the mapping rate (i.e. the fraction of reads that are mapped) --- which appears in the comments of the main output file "quant.sf".  You may be able to recover a small fraction of extra reads with quality / adapter trimming, but generally this is not necessary for Sailfish to map reads accurately for quantification purposes.
