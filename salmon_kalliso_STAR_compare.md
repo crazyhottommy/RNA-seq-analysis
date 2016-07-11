@@ -389,3 +389,9 @@ ggplot(HTSeq.salmon.kallisto.TPM,aes(x=log2(salmon.WT+1), y=log2(kallisto.WT+1))
 
 cor(log2(HTSeq.salmon.kallisto.TPM$salmon.WT+1), log2(HTSeq.salmon.kallisto.TPM$kallisto.WT+1), method="spearman")
 ```
+![6](https://cloud.githubusercontent.com/assets/4106146/16748682/270e7202-478b-11e6-8534-9b6b47710c23.png)
+![5](https://cloud.githubusercontent.com/assets/4106146/16748684/271ab620-478b-11e6-9203-d0d3e6560376.png)
+![4](https://cloud.githubusercontent.com/assets/4106146/16748686/271e78b4-478b-11e6-962a-3169e0d5e13d.png)
+![3](https://cloud.githubusercontent.com/assets/4106146/16748683/2717a796-478b-11e6-9744-4e477f2a3c15.png)
+![2](https://cloud.githubusercontent.com/assets/4106146/16748685/271b5562-478b-11e6-8f39-225b6a2b2aa0.png)
+![1](https://cloud.githubusercontent.com/assets/4106146/16748687/27276f3c-478b-11e6-9e7a-1a5a0a16f035.png)
