@@ -326,3 +326,66 @@ tx.salmon <- tximport(salmon.files, type = "salmon", tx2gene = tx2gene,
 ```
 
 ### compare STAR-HTseq, kallisto and salmon
+
+```r
+## merge the counts table together from HTSeq, salmon and kallisto
+head(counts.df)
+salmon.counts<- tx.salmon$counts
+salmon.counts<- as.data.frame(salmon.counts)
+salmon.counts$gene_name<- rownames(salmon.counts)
+
+kallisto.counts<- tx.kallisto$counts
+kallisto.counts<- as.data.frame(kallisto.counts)
+kallisto.counts$gene_name<- rownames(kallisto.counts)
+
+HTSeq.salmon.counts<- inner_join(counts.df, salmon.counts)
+HTSeq.salmon.kallisto.counts<- inner_join(HTSeq.salmon.counts, kallisto.counts) %>% dplyr::select(-Length)
+
+### counts correlation for WT sample only
+
+library(ggplot2)
+
+ggplot(HTSeq.salmon.kallisto.counts,aes(x=log2(HTseq.WT+1), y=log2(salmon.WT+1))) + geom_point() + geom_smooth(method="lm") + geom_abline(slope=1, intercept = 0, color="red") + annotate("text", x=15, y=20, label= "spearman cor = 0.86") + ggtitle("HTSeq counts versus salmon counts")
+
+cor(log2(HTSeq.salmon.kallisto.counts$HTseq.WT+1), log2(HTSeq.salmon.kallisto.counts$salmon.WT+1), method="spearman")
+
+
+ggplot(HTSeq.salmon.kallisto.counts,aes(x=log2(HTseq.WT+1), y=log2(kallisto.WT+1))) + geom_point() + geom_smooth(method="lm") + geom_abline(slope=1, intercept = 0, color="red") + annotate("text", x=15, y=20, label= "spearman cor = 0.83") + ggtitle("HTSeq counts versus kallisto counts") 
+
+cor(log2(HTSeq.salmon.kallisto.counts$HTseq.WT+1), log2(HTSeq.salmon.kallisto.counts$kallisto.WT+1), method="spearman")
+
+ggplot(HTSeq.salmon.kallisto.counts,aes(x=log2(salmon.WT+1), y=log2(kallisto.WT+1))) + geom_point() + geom_smooth(method="lm") + geom_abline(slope=1, intercept = 0, color="red") + annotate("text", x=15, y=20, label= "spearman cor = 0.94") + ggtitle("salmon counts versus kallisto counts") 
+
+cor(log2(HTSeq.salmon.kallisto.counts$salmon.WT+1), log2(HTSeq.salmon.kallisto.counts$kallisto.WT+1), method="spearman")
+
+
+### merge the TPM table together from HTSeq, salmon and kallisto
+head(TPM.from.HTSeq)
+TPM.from.HTSeq<- as.data.frame(TPM.from.HTSeq)
+TPM.from.HTSeq$gene_name<- rownames(TPM.from.HTSeq)
+
+salmon.TPM<- tx.salmon$abundance
+salmon.TPM<- as.data.frame(salmon.TPM)
+salmon.TPM$gene_name<- rownames(salmon.TPM)
+
+kallisto.TPM<- tx.kallisto$abundance
+kallisto.TPM<- as.data.frame(kallisto.TPM)
+kallisto.TPM$gene_name<- rownames(kallisto.TPM)
+
+HTSeq.salmon.TPM<- inner_join(TPM.from.HTSeq, salmon.TPM) 
+## re-order the columns
+HTSeq.salmon.kallisto.TPM<- inner_join(HTSeq.salmon.TPM, kallisto.TPM) %>% dplyr::select(c(4,1:3,5:10)) 
+
+## plot TPM correlation
+ggplot(HTSeq.salmon.kallisto.TPM,aes(x=log2(HTseq.WT+1), y=log2(salmon.WT+1))) + geom_point() + geom_smooth(method="lm") + geom_abline(slope=1, intercept = 0, color="red") + annotate("text", x=12, y=15, label= "spearman cor = 0.84") + ggtitle("HTSeq TPM versus salmon TPM")
+
+cor(log2(HTSeq.salmon.kallisto.TPM$HTseq.WT+1), log2(HTSeq.salmon.kallisto.TPM$salmon.WT+1), method="spearman")
+
+ggplot(HTSeq.salmon.kallisto.TPM, aes(x=log2(HTseq.WT+1), y=log2(kallisto.WT+1))) + geom_point() + geom_smooth(method="lm") + geom_abline(slope=1, intercept = 0, color="red") + annotate("text", x=12, y=15, label= "spearman cor = 0.83") + ggtitle("HTSeq TPM versus kallisto TPM")
+
+cor(log2(HTSeq.salmon.kallisto.TPM$HTseq.WT+1), log2(HTSeq.salmon.kallisto.TPM$kallisto.WT+1), method="spearman")
+
+ggplot(HTSeq.salmon.kallisto.TPM,aes(x=log2(salmon.WT+1), y=log2(kallisto.WT+1))) + geom_point() + geom_smooth(method="lm") + geom_abline(slope=1, intercept = 0, color="red") + annotate("text", x=12, y=15, label= "spearman cor = 0.95") + ggtitle("salmon TPM versus kallisto TPM")
+
+cor(log2(HTSeq.salmon.kallisto.TPM$salmon.WT+1), log2(HTSeq.salmon.kallisto.TPM$kallisto.WT+1), method="spearman")
+```
