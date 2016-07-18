@@ -215,6 +215,9 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * paper [Characterizing noise structure in single-cell RNA-seq distinguishes genuine from technical stochastic allelic expression](http://www.nature.com/ncomms/2015/151022/ncomms9687/full/ncomms9687.html)  
 * paper [Tools and best practices for data processing in allelic expression analysis](http://www.genomebiology.com/2015/16/1/195)
 
+### single cell RNA-seq normalization
+* [paper: Assessment of single cell RNA-seq normalization methods](http://biorxiv.org/content/early/2016/02/04/038612)
+
 ### Single cell RNA-seq
 
 * [a collection of single RNA-seq tools by Sean Davis ](https://github.com/seandavi/awesome-single-cell)
