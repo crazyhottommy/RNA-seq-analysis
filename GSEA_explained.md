@@ -11,7 +11,9 @@ let's say that S1 has positive NES and S2 has negative NES. let's say also that 
 in the results you will also find a heatmap the subset of you data that belong to the signature analyzed. generally what I saw is that the more significantly enriched is the gene set, the better the division between the two conditions in the heatmap.
 
 One can run GSEA in two modes:
-1. supply a expression data file in various [formats](http://www.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats)
+
+#### using raw gene expression data
+Supply a expression data file in various [formats](http://www.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats)
 one of the common format is GCT: Gene Cluster Text file format (*.gct)).
 ![](https://cloud.githubusercontent.com/assets/4106146/16968303/8f65e8e6-4dd3-11e6-9a98-093eb0bd1e86.png) 
 and a phenotype label file :
@@ -30,7 +32,7 @@ For descriptions of the ranking metrics, see Metrics for Ranking Genes.
 To use this metric, your phenotype file must define at least two categorical phenotypes and your expression dataset must contain at least three (3) samples for each phenotype. If you are using a continuous phenotype or your expression dataset contains fewer than three samples per phenotype, you must choose a different ranking metric. 
 If your expression dataset contains only one sample, you must rank the genes and use the GSEAPreranked Page to analyze the ranked list; none of the GSEA metrics for ranking genes can be used to rank genes based on a single sample.
 
-2. [using a pre-ranked gene list](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_GSEAPreranked_Page)
+#### [using a pre-ranked gene list](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_GSEAPreranked_Page)
 
 
 
