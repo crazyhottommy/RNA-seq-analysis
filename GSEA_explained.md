@@ -27,10 +27,10 @@ parameter to determine whether to sort the genes in descending (default) or asce
 For descriptions of the ranking metrics, see Metrics for Ranking Genes.
 
 >Note: The default metric for ranking genes is the signal-to-noise ratio. 
-To use this metric, your phenotype file must define at least two categorical phenotypes and your expression dataset must contain at least 
-three (3) samples for each phenotype. If you are using a continuous phenotype or your expression dataset contains fewer than three samples per phenotype, you must choose a different ranking metric. 
-If your expression dataset contains only one sample, you must rank the genes and use the GSEAPreranked Page to analyze the ranked list; 
-none of the GSEA metrics for ranking genes can be used to rank genes based on a single sample.
+To use this metric, your phenotype file must define at least two categorical phenotypes and your expression dataset must contain at least three (3) samples for each phenotype. If you are using a continuous phenotype or your expression dataset contains fewer than three samples per phenotype, you must choose a different ranking metric. 
+If your expression dataset contains only one sample, you must rank the genes and use the GSEAPreranked Page to analyze the ranked list; none of the GSEA metrics for ranking genes can be used to rank genes based on a single sample.
 
-2. using a pre-ranked gene list
+2. [using a pre-ranked gene list](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_GSEAPreranked_Page)
+
+
 
