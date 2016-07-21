@@ -16,7 +16,7 @@ So the idea is pretty simple, one need to have a pre-ranked gene list according 
 
 **One can run GSEA in two modes:**
 
-#### using raw gene expression data
+#### 1. using raw gene expression data
 Supply a expression data file in various [formats](http://www.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats)
 one of the common format is GCT: Gene Cluster Text file format (*.gct)).
 ![](https://cloud.githubusercontent.com/assets/4106146/16968303/8f65e8e6-4dd3-11e6-9a98-093eb0bd1e86.png) 
@@ -37,7 +37,7 @@ To use this metric, your phenotype file must define at least two categorical phe
 
 >**If your expression dataset contains only one sample, you must rank the genes and use the GSEAPreranked Page to analyze the ranked list; none of the GSEA metrics for ranking genes can be used to rank genes based on a single sample.**
 
-#### [using a pre-ranked gene list](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_GSEAPreranked_Page)
+#### 2. [using a pre-ranked gene list](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_GSEAPreranked_Page)
 
 **The take-home message is that no matter what mode you use, internally GSEA is going to rank your list of genes first and then it will compare the public-curated gene sets with the ranked gene list you have.**
 
