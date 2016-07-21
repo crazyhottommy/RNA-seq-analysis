@@ -12,7 +12,7 @@ in the results you will also find a heatmap the subset of you data that belong t
 
 ![](https://cloud.githubusercontent.com/assets/4106146/17038331/e2095c44-4f5a-11e6-9a19-d366912ef943.png)  
 
-So the idea is pretty simple, one need to have a pre-ranked gene list according to [some metrics](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_Metrics_for_Ranking), and GSEA will test various curated gene sets to see if the gene sets is in the front or bottom of the ranked gene list.
+So the idea is pretty simple, one need to have a pre-ranked gene list according to [some metrics](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_Metrics_for_Ranking), and GSEA will test various curated gene sets to see if the gene sets is in the front or bottom of the ranked gene list and calculate p-value by permutations of either phenotype (default) or gene sets(only option in pre-rank mode for GSEA).
 
 **One can run GSEA in two modes:**
 
