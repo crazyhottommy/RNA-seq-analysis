@@ -37,3 +37,57 @@ To use this metric, your phenotype file must define at least two categorical phe
 
 
 
+The take-home message is that no matter what mode you use, internally GSEA is going to rank your list of genes first and then it will compare the public-curated gene sets with the ranked gene list you have.
+
+The key here is that you need to supply **ALL genes** that are detected in the experiment (all probes for microarray and all genes detected in the RNA-seq experiment). Read a blog post by [Mark Ziemann: Data analysis step 8: Pathway analysis with GSEA](http://genomespot.blogspot.com/2014/09/data-analysis-step-8-pathway-analysis.html) and my comments below the post.
+
+by Roberto  
+> great post! Just a question on gene expression direction.
+
+>In your examples, genes tend to be consistently only up-regulated or only down-regulated. Now let's say that you have immune genes, both strongly up-regulated and strongly down-regulated. The up-regulated ones are activators of immunity, and the downregulated ones are suppressors of immunity. It makes biological sense that the former go up and the latter go down.
+
+>Then you have a gene set "Immune function" comprising both activators and suppressors of immunity, i.e. it lists genes related to immunity, but it is not skewed towards activation or suppression.
+
+>When you run GSEA pre-ranked, the ES will go up immediately (upregulated activators), then it will decrease slowly, and then it will have another sharp increase (downregulated suppressors).
+
+>Conversely, if both up and downregulated genes were listed at the top (by using the inverse of p-value, without the fold change sign), the ES would achieve a higher max.
+
+>So my question is: if gene sets do not distinguish between activators and repressors, should we forget about the sign and place both up- and down-regulated genes at the top of our ranked list?
+
+by Mark:  
+>Hi Roberto, thanks for your comment. Indeed I perform pathway analysis considering up and down regulated genes as separate groups. This does somewhat contradict the KEGG/Reactome gene sets that contain both repressors and activators. These curated gene sets are hand picked largely based on protein functional data so we understand that there are limitations when talking about gene expression assays.
+
+>The solution you propose, that GSEA be based on the variation of a gene set from the null (no change), is totally possible and very interesting but I haven't tried it yet.
+
+>BUT the benefit of keeping the up- and down-regulated analysis separate is that you may be able to pinpoint smaller sub-pathways that are in either direction. For instance "immune function" could be made up of smaller pathways like "IFN signalling" or "LPS stimulation" that are moving in opposing directions. 
+
+>Essentially the assumption with the direction-separated analysis is that the biological mechanisms underlying the up- and down- regulated genes is different, which in general is true and is consistent with our example above with immune function down and cell cycle up.
+
+Me:  
+>Hi mark, Stumbling into this old post and thanks for it. I had the same question. so when you give the pre-ranked gene list to GSEA, you separate them to 2 groups: upregulated (+ sign) and downregulated(-sign) and do GSEA respectively? thx.
+
+Mark:  
+>
+Hi Tommy, I don't separate the lists as GSEA preranked is able to identify up and down regulated pathways by default. Cheers!
+
+Me:  
+>so the gene sets denote whether a certain gene is activator or repressor for the pathway? A down-regulated pathway may consist of genes of activators(downregulated) and genes of repressors (upregulated). correct me if I miss something.﻿
+
+Mark:
+>GSEA preranked is a pretty simple test. It just checks whether gene set members are clustered at either end of the rank file and what the chances are of this enrichment occurring at random. The gene sets can be curated in any way, you will see that MSigDB contains both curated (KEGG, Reactome) and experimental (microarray, GWAS, proteomics) gene sets. GSEA doesn't know whether each individual gene is an activator or repressor, it only knows the gene name and the gene sets that it is present.
+
+Roberto
+> Hi Mark, because GSEA preranked can find enrichment at either end, but not both ends, of the rank file, then it would make sense to test separately upregulated and downregulated genes. I guess this is what Tommy is interested in, and that would be in line with our previous conversation above. I think the concern is that a pathway annotated by, say, KEGG, will comprise both positive regulators of that pathway (activators) and negative regulators (repressors). With the due limitations, if a pathway is "activated", then in a RNA-seq experiment we would see activators being upregulated and repressors being downregulated. Therefore, we would see enrichment of gene set members at both ends on the rank file, not just at the top or just at the bottom. My understanding is that GSEA results are less significant when there is enrichment at both ends. It works better when enrichment is focused at either end, something we can achieve by providing only upregulated or downregulated genes, separately in two separate GSEA runs. 
+
+>This seems also to be the sense of this question in the GSEA FAQ:
+
+>http://www.broadinstitute.org/cancer/software/gsea/wiki/index.php/FAQ#Can_I_use_GSEA_with_gene_sets_that_have_both_up-_and_down-regulated_genes.3F
+
+>Although both the question and the answer are very confusing.
+
+Mark:  
+>True that curated pathways like KEGG include activators and repressors, but if you look at the contents of these gene sets, they are predominantly downstream effectors and as such, they will mostly be co-regulated.
+
+>If your null hypothesis is that the gene set members are unchanged (and found in the middle of the rank file), then you might be able to test this with GSEA by assigning a metric based on the significance irrespective of fold change direction.﻿
+
+
