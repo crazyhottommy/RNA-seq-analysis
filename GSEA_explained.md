@@ -10,7 +10,11 @@ a positive NES will indicate that genes in set S will be mostly represented at t
 let's say that S1 has positive NES and S2 has negative NES. let's say also that your list of 1000 genes is ordered form the most upregulated (top: 1,2,3,....) to the most downregulated (bottom: ....n-3,n-2,n-1,n). a positive NES for S1 will mean that genes over-represented in that gene set are upregulated in your dataset. negative NES for S2 instead indicated the opposite.  
 in the results you will also find a heatmap the subset of you data that belong to the signature analyzed. generally what I saw is that the more significantly enriched is the gene set, the better the division between the two conditions in the heatmap.
 
-One can run GSEA in two modes:
+![](https://cloud.githubusercontent.com/assets/4106146/17038331/e2095c44-4f5a-11e6-9a19-d366912ef943.png)  
+
+So the idea is pretty simple, one need to have a pre-ranked gene list according to [some metrics](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_Metrics_for_Ranking), and GSEA will test various curated gene sets to see if the gene sets is in the front or bottom of the ranked gene list.
+
+**One can run GSEA in two modes:**
 
 #### using raw gene expression data
 Supply a expression data file in various [formats](http://www.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats)
@@ -35,9 +39,7 @@ To use this metric, your phenotype file must define at least two categorical phe
 
 #### [using a pre-ranked gene list](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_GSEAPreranked_Page)
 
-
-
-The take-home message is that no matter what mode you use, internally GSEA is going to rank your list of genes first and then it will compare the public-curated gene sets with the ranked gene list you have.
+**The take-home message is that no matter what mode you use, internally GSEA is going to rank your list of genes first and then it will compare the public-curated gene sets with the ranked gene list you have.**
 
 The key here is that you need to supply **ALL genes** that are detected in the experiment (all probes for microarray and all genes detected in the RNA-seq experiment). Read a blog post by [Mark Ziemann: Data analysis step 8: Pathway analysis with GSEA](http://genomespot.blogspot.com/2014/09/data-analysis-step-8-pathway-analysis.html) and my comments below the post.
 
@@ -90,4 +92,4 @@ Mark:
 
 >If your null hypothesis is that the gene set members are unchanged (and found in the middle of the rank file), then you might be able to test this with GSEA by assigning a metric based on the significance irrespective of fold change direction.﻿
 
-
+I will post how to do a GSEA practially use R in a separate post.
