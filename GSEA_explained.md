@@ -26,7 +26,7 @@ I read the [mannual](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTE
 Use this parameter to select the metric used to score and rank the genes; use the Gene list sorting mode parameter to determine 
 whether to sort the genes using the real (default) or absolute value of the metric score; and use the Gene list ordering mode 
 parameter to determine whether to sort the genes in descending (default) or ascending order. 
-For descriptions of the ranking metrics, see Metrics for Ranking Genes.
+For descriptions of the ranking metrics, see [Metrics for Ranking Genes](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_Metrics_for_Ranking).
 
 >Note: The default metric for ranking genes is the signal-to-noise ratio. 
 To use this metric, your phenotype file must define at least two categorical phenotypes and your expression dataset must contain at least **three (3)** samples for each phenotype. If you are using a continuous phenotype or your expression dataset contains fewer than three samples per phenotype, you must choose a different ranking metric. 
