@@ -38,6 +38,7 @@ To use this metric, your phenotype file must define at least two categorical phe
 >**If your expression dataset contains only one sample, you must rank the genes and use the GSEAPreranked Page to analyze the ranked list; none of the GSEA metrics for ranking genes can be used to rank genes based on a single sample.**
 
 #### 2. [using a pre-ranked gene list](http://software.broadinstitute.org/gsea/doc/GSEAUserGuideTEXT.htm#_GSEAPreranked_Page)
+This is useful when you have <3 samples for each phenotype. The matric Mark uses is the `signed fold change * -log10pvalue`.
 
 **The take-home message is that no matter what mode you use, internally GSEA is going to rank your list of genes first and then it will compare the public-curated gene sets with the ranked gene list you have.**
 
