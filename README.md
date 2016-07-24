@@ -173,6 +173,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [GTEx Resources in the UCSC Browser](http://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=gtexGene) [signal track on trackhub](http://genome.ucsc.edu/cgi-bin/hgHubConnect)
 * [batch recompute ~20,000 RNA-seq samples from larget sequencing project such as TCGA, TARGET and GETEX](https://genome-cancer.soe.ucsc.edu/proj/site/xena/datapages/?host=https://toil.xenahubs.net). Used `hg38` and `gencode v21` as annotation.
 * [A cloud-based workflow to quantify transcript-expression levels in public cancer compendia](http://biorxiv.org/content/early/2016/07/12/063552) used kallisto for TCGA/CCLE datasets and gencode v24 as annotation.
+* [OMics Compendia Commons (OMiCC)](https://omicc.niaid.nih.gov/) OMiCC is a community-based, biologist-friendly web platform for creating and (meta-) analyzing annotated gene-expression data compendia across studies and technology platforms for more than 24,000 human and mouse studies from Gene Expression Omnibus (GEO)
 
 ### Gene Set enrichment analysis
 * [Gene set analysis approaches for RNA-seq data: performance evaluation and application guideline](http://bib.oxfordjournals.org/content/early/2015/09/04/bib.bbv069.long)  
