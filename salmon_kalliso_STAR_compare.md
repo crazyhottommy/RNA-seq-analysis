@@ -404,3 +404,150 @@ I am sorry that my analysis is not fully reproducible as I can not share the dat
 
 by [Rob](https://groups.google.com/forum/#!topic/sailfish-users/st918qtdM34)
 >One of the benefits of the quasi-mapping approach taken by sailfish is that it is rather robust to quality and adapter trimming.  One way you can assess this is by looking at the mapping rate (i.e. the fraction of reads that are mapped) --- which appears in the comments of the main output file "quant.sf".  You may be able to recover a small fraction of extra reads with quality / adapter trimming, but generally this is not necessary for Sailfish to map reads accurately for quantification purposes.
+
+**UPDATE 07/24/16**
+Robs suggested that "taking the aggregate feature length (i.e. the gene length) and then correcting it may not always yield the same result as correcting the feature length (i.e. the transcript lengths) and then aggregating them to the gene level." see comment below.
+
+I then re-calculated TPM from counts using the method he suggested, and the correlation looks better, but spearman correlation does not improve.
+
+get rid of the digits (gene version) in the end for the gene names (gencode v19)
+
+```bash
+cat STAR_WT-30393468_htseq.cnt| sed -E 's/\.[0-9]+//' > WT_htseq.cnt
+```
+transcript to gene mapping file:
+
+```r
+library(EnsDb.Hsapiens.v75)
+edb <- EnsDb.Hsapiens.v75
+
+Tx.ensemble <- transcripts(edb,
+          columns = c("tx_id", "gene_id", "gene_name"),
+          return.type = "DataFrame")
+nrow(Tx.ensemble)
+
+tx2gene<- Tx.ensemble[,c(1,2)]
+
+write.table(tx2gene, "~/playground/gene-level-effective-length/tx2gene.tsv", col.names = F, row.names = F, sep="\t", quote=F)
+```
+
+add `#! /bin/env python` to the head of the python script [Rob wrote](https://gist.github.com/rob-p/fe3e5469a96b462fc4d092c97edd41bf).
+
+```python
+#! /bin/env python
+import argparse
+import pandas as pd
+import numpy as np
+import sys
+
+def main(args):
+    gtable = pd.read_table(args.ginput).set_index('Name')
+    ttable = pd.read_table(args.tinput).set_index('Name')
+    tgmap = pd.read_table(args.tgmap, names=['t', 'g']).set_index('t')
+    gene_lengths = {}
+    j = 0
+    
+    # Map over all gene groups (a gene and its associated transcripts)
+    for g, txps in tgmap.groupby('g').groups.iteritems():
+        if j % 500 == 1:
+            print("Processed {} genes".format(j))
+        j += 1
+        # The set of transcripts present in our salmon index
+        tset = []
+        for t in txps:
+            if t in ttable.index:
+                tset.append(t)
+        # If at least one of the transcripts was present
+        if len(tset) > 0:
+            # The denominator is the sum of all TPMs
+            totlen = ttable.loc[tset,'TPM'].sum()
+            # Turn the relative TPMs into a proper partition of unity
+            if totlen > 0:
+                tpm_fracs = ttable.loc[tset, 'TPM'].values / ttable.loc[tset,'TPM'].sum()
+            else:
+                tpm_fracs = np.ones(len(tset)) / float(len(tset))
+            # Compute the gene's effective length as the abundance-weight
+            # sum of the transcript lengths
+            elen = 0.0
+            for i,t in enumerate(tset):
+                elen += tpm_fracs[i] * ttable.loc[t, 'EffectiveLength']
+            gene_lengths[g] = elen
+            
+    # Give the table an effective length field
+    gtable['EffectiveLength'] = gtable.apply(lambda r : gene_lengths[r.name] if r.name in gene_lengths else 1.0, axis=1)
+    # Write it to the output file
+    gtable.to_csv(args.output, sep='\t', index_label='Name')
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Compute gene-level effective lengths")
+    parser.add_argument('--ginput', type=str, help='gene level input table')
+    parser.add_argument('--tinput', type=str, help='transcript level input table')
+    parser.add_argument('--tgmap', type=str, help='transcript -> gene mapping')
+    parser.add_argument('--output', type=str, help='output table with extra column')
+
+    args = parser.parse_args()
+    main(args)
+
+```
+
+```bash
+chmod u + x glef.py
+
+/glef.py --ginput WT_htseq.cnt --tinput WT_quant.sf --tgmap tx2gene.tsv --output WT_htseq_effective_length.tsv
+
+```
+
+compare effecitve length derived from transcript level and salmon output gene level 
+
+```{r}
+WT.count.df<- read.table("~/playground/gene-level-effective-length/WT_htseq_effective_length.tsv",
+                         sep ="\t", header=T, stringsAsFactors = F)
+
+head(counts.df)
+
+counts.effective.df<- left_join(counts.df, WT.count.df, by=c("gene_name"="Name"))
+
+## scatter plot of effective length from gene level output of salmon and effective length derived from transcript level salmon output
+
+plot(log2(counts.effective.df$EffectiveLength.x+1), log2(counts.effective.df$EffectiveLength.y+1), xlab= "log2 effective gene length from salmon gene level output", ylab="log2 effective gene length derived from transcript level")
+
+abline(a=0, b=1, col="red")
+```
+![](https://cloud.githubusercontent.com/assets/4106146/17089297/d4bc87ea-51ea-11e6-9546-6775552f5034.png)
+
+```r
+## convert to TPM use transcript derived effective gene length
+WT_count<- as.matrix(counts.effective.df[,2])
+
+count2Tpm <- function(counts, effLen)
+{
+    rate <- log(counts) - log(effLen)
+    denom <- log(sum(exp(rate)))
+    exp(rate - denom + log(1e6))
+}
+
+WT.TPM.from.HTSeq<- count2Tpm(WT_count, counts.effective.df$EffectiveLength.y)
+WT.TPM.from.HTSeq<- cbind(as.data.frame(WT.TPM.from.HTSeq), gene_name=counts.effective.df$gene_name) 
+colnames(WT.TPM.from.HTSeq)<- c("WT.htseq.TPM", "gene_name")
+
+head(TPM.from.HTSeq)
+dim(salmon.TPM)
+
+WT.TPM.HTseq.salmon<- left_join(WT.TPM.from.HTSeq, salmon.TPM)
+WT.TPM.HTseq.salmon.kallisto<- left_join(WT.TPM.HTseq.salmon, kallisto.TPM)
+
+## HTSeq TPM versus salmon TPM
+ggplot(WT.TPM.HTseq.salmon.kallisto,aes(x=log2(WT.htseq.TPM+1), y=log2(salmon.WT+1))) + geom_point() + geom_smooth(method="lm") + geom_abline(slope=1, intercept = 0, color="red") + annotate("text", x=13, y=20, label= "spearman cor = 0.85") + ggtitle("HTseq TPM versus salmon TPM") 
+
+cor(log2(WT.TPM.HTseq.salmon$WT.htseq.TPM+1), log2(WT.TPM.HTseq.salmon$salmon.WT+1), method="spearman")
+```
+![](https://cloud.githubusercontent.com/assets/4106146/17089296/d4ac150e-51ea-11e6-804e-1ba274e1e4bf.png)
+
+```r
+## HTSeq TPM versus kallisto TPM
+
+ggplot(WT.TPM.HTseq.salmon.kallisto,aes(x=log2(WT.htseq.TPM+1), y=log2(kallisto.WT+1))) + geom_point() + geom_smooth(method="lm") + geom_abline(slope=1, intercept = 0, color="red") + annotate("text", x=13, y=20, label= "spearman cor = 0.80") + ggtitle("HTseq TPM versus kallisto TPM") 
+
+cor(log2(WT.TPM.HTseq.salmon.kallisto$WT.htseq.TPM+1), log2(WT.TPM.HTseq.salmon.kallisto$kallisto.WT+1), method="spearman")
+```
+![](https://cloud.githubusercontent.com/assets/4106146/17089295/d4ab3bf2-51ea-11e6-9172-413318daee5f.png)
