@@ -1,5 +1,5 @@
 # RNA-seq analysis
-
+[![Codewake](https://www.codewake.com/badges/ask_question.svg)](https://www.codewake.com/p/rnaseq-analysis)
 ### General sequencing data analysis materials
 * [Next-Gen Sequence Analysis Workshop (2015)](http://angus.readthedocs.org/en/2015/) held by [Titus Brown](http://genomecenter.ucdavis.edu/people/faculty/name/c-titus-brown/)  (now in UC Davis)
 * [Fall 2015, BMMB 852: Applied Bioinformatics](http://www.personal.psu.edu/iua1/2015_fall_852/main_2015_fall_852.html) by        [Istvan Albert](http://www.personal.psu.edu/iua1/) from Penn state University. He developed the all-time popular 
