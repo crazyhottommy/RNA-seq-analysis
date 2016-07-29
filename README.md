@@ -23,6 +23,7 @@
 *  [RNAseq data analysis from data carpentry](https://github.com/datacarpentry/rnaseq-data-analysis)
 *  [paper: Isoform prefiltering improves performance of count-based methods for analysis of differential transcript usage](http://www.genomebiology.com/2016/17/1/12)
 *  [paper: A survey of best practices for RNA-seq data analysis](http://www.genomebiology.com/2016/17/1/13)
+*  [paper: Reproducibility of high-throughput mRNA and small RNA sequencing across laboratories](http://www.nature.com/nbt/journal/v31/n11/full/nbt.2702.html)
 *  [paper: Cross-platform normalization of microarray and RNA-seq data for machine learning applications](https://peerj.com/articles/1621/#results|discussion). [Tool](https://github.com/greenelab/TDM) 
 *  [review: Translating RNA sequencing into clinical diagnostics: opportunities and challenges](http://www.nature.com/nrg/journal/v17/n5/full/nrg.2016.10.html)
 
