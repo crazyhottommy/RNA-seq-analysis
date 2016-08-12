@@ -70,6 +70,8 @@ align RNA-seq reads to genome ([HISAT](http://www.nature.com/nmeth/journal/v12/n
 assemble transcripts and estimate expression ([StringTie](http://www.nature.com/nbt/journal/v33/n3/full/nbt.3122.html) instead of Cufflinks), and  
 perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/journal/v33/n3/full/nbt.3172.html) instead of Cuffmerge).  
 
+[nature protocol:Transcript-level expression analysis of RNA-seq experiments with HISAT, StringTie and Ballgown](http://www.nature.com/nprot/journal/v11/n9/full/nprot.2016.095.html) 08/11/2016
+
 [**RapMap**](http://biorxiv.org/content/early/2015/10/28/029652): A Rapid, Sensitive and Accurate Tool for Mapping RNA-seq Reads to Transcriptomes. From Sailfish group.
 
 * [BitSeq](http://bitseq.github.io/) Transcript isoform level expression and differential expression estimation for RNA-seq
