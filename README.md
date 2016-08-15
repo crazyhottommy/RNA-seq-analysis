@@ -60,6 +60,7 @@
 * A nice tutorial from f1000 research [RNA-Seq workflow: gene-level exploratory analysis and differential expression](http://f1000research.com/articles/4-1070/v1) from Michael Love who is the author of DESeq2.
 
 * [f1000 bioconductor workflow: RNA-seq analysis is easy as 1-2-3 with limma, Glimma and edgeR ](http://f1000research.com/articles/5-1408/v1)
+* [f1000 From reads to genes to pathways: differential expression analysis of RNA-Seq experiments using Rsubread and the edgeR quasi-likelihood pipeline](http://f1000research.com/articles/5-1438/v2) by Gordon Smith.
 
 A post from [Nextgeneseek](http://nextgenseek.com/2015/03/three-papers-on-new-rna-seq-methods-offer-a-new-way-to-do-rna-seq-analysis/)
 
