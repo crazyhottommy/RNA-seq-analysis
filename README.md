@@ -9,6 +9,7 @@
 * [awesome tutorial for NGS file format](http://binf.snipcademy.com/lessons/sequence-file-formats)
 * [UVA Bioconnector Workshops](http://bioconnector.org/workshops/)
 * [Explaining your errors QC fail](https://sequencing.qcfail.com/)
+* [EMBL-EBI has a very comprehensive list of courses for online training](http://www.ebi.ac.uk/training/online/)
 
 ### RNA-seq specific 
 
