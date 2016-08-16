@@ -50,6 +50,7 @@
 *  paper: [Union Exon Based Approach for RNA-Seq Gene Quantification: To Be or Not to Be?](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0141910)  
 *  [paper: The impact of amplification on differential expression analyses by RNA-seq](http://biorxiv.org/content/early/2015/12/28/035493) Computational removal of read duplicates is not recommended for differential expression analysis.
 *  [paper: Normalization of RNA-seq data using factor analysis of control genes or samples](https://www.ncbi.nlm.nih.gov/pubmed/25150836 "Risso D et al. Nat Biotechnol 2014"): About spike-ins control and R normalization strategy - remove unwanted variation (RUV).
+*  [NVT](https://github.com/Edert/NVT) - an R package for the assessment of RNA-Seq normalization methods
 
 #### Traditional way of RNA-seq analysis 
 
