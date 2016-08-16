@@ -228,6 +228,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
 ### single cell RNA-seq normalization
 * [paper: Assessment of single cell RNA-seq normalization methods](http://biorxiv.org/content/early/2016/02/04/038612)
+* [SinQC: A Method and Tool to Control Single-cell RNA-seq Data Quality](http://www.morgridge.net/SinQC.html)
 
 ### Single cell RNA-seq
 
