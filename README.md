@@ -135,6 +135,7 @@ Finally, differential expression is carried out by
 8. [A sleuth for RNA-seq](https://liorpachter.wordpress.com/2015/08/17/a-sleuth-for-rna-seq/)  
 9. [Using Salmon, Sailfish and Sleuth for differential expression](http://robpatro.com/blog/?p=291)
 10. [Road-testing Kallisto](https://cgatoxford.wordpress.com/2015/10/12/road-testing-kallisto/)
+11. [Why you should use alignment-independent quantification for RNA-Seq](https://cgatoxford.wordpress.com/2016/08/17/why-you-should-stop-using-featurecounts-htseq-or-cufflinks2-and-start-using-kallisto-salmon-or-sailfish/)
 
 
 A biostar [post](https://www.biostars.org/p/143458/#157303): **Do not feed rounded estimates of gene counts from kallisto into DESeq2** (please make sure you read through all the comments, and now there is a suggested workflow for feeding rounded estimates of gene counts to DESeq etc)   
