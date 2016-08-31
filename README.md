@@ -128,7 +128,10 @@ Finally, differential expression is carried out by
 
 >Detecting DTU is supplementary to the quantification of transcripts by tools like Salmon, Sailfish and Kallisto and the detection of Differential Transcript Expression (DTE) by tools such as Sleuth.
 
-I particularly like the figure in the tutorial showing the differences among DTU, DTE and DEG (the paper transcript-level estimates improve gene-level inferences above also talks about the differences):
+I particularly like the figure in the tutorial showing the differences among DTU, DTE and DEG.
+The paper transcript-level estimates improve gene-level inferences above also talks about the differences:
+1) differential gene expression (DGE) studies, where the overall transcriptional output of each gene is compared between conditions;  2) differential transcript/exon usage (DTU/DEU) studies, where the composition of a gene’s isoform abundance spectrum is compared between conditions, or  
+3) differential transcript expression (DTE) studies, where the interest lies in whether individual transcripts show differential expression between conditions.  
 ![](https://cloud.githubusercontent.com/assets/4106146/18142832/e86c1dd4-6f84-11e6-8efb-8dd404e2942a.png)
 
 
