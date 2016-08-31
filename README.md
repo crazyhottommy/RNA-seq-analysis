@@ -121,7 +121,7 @@ Finally, differential expression is carried out by
 *  [Differential analysis of RNA-Seq incorporating quantification uncertainty: sleuth](http://biorxiv.org/content/early/2016/06/10/058164)
 *  [Reanalysis of published RNA-Seq data using kallisto and sleuth](http://lair.berkeley.edu/) based on shiny.
 *  [tximport: import and summarize transcript-level estimates for gene-level analysis](https://github.com/mikelove/tximport/blob/master/vignettes/tximport.md) now on [bioconductor](http://bioconductor.org/packages/devel/bioc/html/tximport.html)   
-*  [f1000 research paper Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v1) from Mike love et.al.
+*  [f1000 research paper Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v2) from Mike love et.al.
 *  [RATS](https://github.com/bartongroup/RATS): Relative Abundance of Transcripts: An R package for the detection of Differential. Transcript isoform Usage.  
 
 >It provides a method to detect changes in the relative abundance of the alternative transcripts (isoforms) of genes. This is called Differential Transcript Usage (DTU).
