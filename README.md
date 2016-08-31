@@ -122,6 +122,13 @@ Finally, differential expression is carried out by
 *  [Reanalysis of published RNA-Seq data using kallisto and sleuth](http://lair.berkeley.edu/) based on shiny.
 *  [tximport: import and summarize transcript-level estimates for gene-level analysis](https://github.com/mikelove/tximport/blob/master/vignettes/tximport.md) now on [bioconductor](http://bioconductor.org/packages/devel/bioc/html/tximport.html)   
 *  [f1000 research paper Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences](http://f1000research.com/articles/4-1521/v1) from Mike love et.al.
+*  [RATS](https://github.com/bartongroup/RATS): Relative Abundance of Transcripts: An R package for the detection of Differential. Transcript isoform Usage.
+>It provides a method to detect changes in the relative abundance of the alternative transcripts (isoforms) of genes. This is called Differential Transcript Usage (DTU).
+
+>Detecting DTU is supplementary to the quantification of transcripts by tools like Salmon, Sailfish and Kallisto and the detection of Differential Transcript Expression (DTE) by tools such as Sleuth.
+
+I particularly like the figure in the tutorial showing the differences among DTU, DTE and DEG (the paper transcript-level estimates improve gene-level inferences above also talks about the differences):
+![](https://cloud.githubusercontent.com/assets/4106146/18142832/e86c1dd4-6f84-11e6-8efb-8dd404e2942a.png)
 
 
 ### Blog posts on Kallisto
