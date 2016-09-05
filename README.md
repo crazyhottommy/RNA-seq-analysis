@@ -178,7 +178,8 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 [Meta-analysis of RNA-seq expression data across species, tissues and studies](http://www.genomebiology.com/2015/16/1/287):**Interspecies clustering by tissue is the predominantly observed pattern among various studies under various distance metrics and normalization methods**
 [Surrogate Variable Analysis:SVA bioconductor](https://www.bioconductor.org/packages/3.3/bioc/html/sva.html)  
 [Paper Summary: Systematic bias and batch effects in single-cell RNA-Seq data](http://nextgenseek.com/2016/01/paper-summary-systematic-bias-and-batch-effects-in-single-cell-rna-seq-data/)  
-[Modeling and correcting fragment sequence bias for RNA-seq](https://github.com/mikelove/alpine): alpine bioconductor package from Mike Love.
+[Modeling and correcting fragment sequence bias for RNA-seq](https://github.com/mikelove/alpine): alpine bioconductor package from Mike Love.  
+[BatchQC](https://github.com/mani2012/BatchQC): interactive software for evaluating sample and batch effects in genomic data
 
 ### Databases
 * [ReCount is an online resource consisting of RNA-seq gene count datasets built using the raw data from 18 different studies](http://bowtie-bio.sourceforge.net/recount/) updated version [here](https://jhubiostatistics.shinyapps.io/recount/)
