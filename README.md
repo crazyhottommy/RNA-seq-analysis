@@ -183,6 +183,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
 ### Databases
 * [ReCount is an online resource consisting of RNA-seq gene count datasets built using the raw data from 18 different studies](http://bowtie-bio.sourceforge.net/recount/) updated version [here](https://jhubiostatistics.shinyapps.io/recount/)
+* [The conquer (consistent quantification of external rna-seq data)](http://imlspenticton.uzh.ch:3838/conquer/) repository is developed by Charlotte Soneson and Mark D Robinson at the University of Zurich, Switzerland. single cell RNA-seq data sets.
 * [The Digital Expression Explorer](http://dee.bakeridi.edu.au/index.html) The Digital Expression Explorer (DEE) is a repository of digital gene expression profiles mined from public RNA-seq data sets. These data are obtained from NCBI Short Read Archive.  
 [blog post for it](http://genomespot.blogspot.com/2015/10/introducing-digital-expression-explorer.html?utm_content=bufferb6214&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 * [SHARQ Search public, human, RNA-seq experiments by cell, tissue type, and other features | Indexing 19807 files](http://sharq.compbio.cs.cmu.edu/)
