@@ -79,6 +79,7 @@ perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/j
 [**RapMap**](http://biorxiv.org/content/early/2015/10/28/029652): A Rapid, Sensitive and Accurate Tool for Mapping RNA-seq Reads to Transcriptomes. From Sailfish group.
 
 * [BitSeq](http://bitseq.github.io/) Transcript isoform level expression and differential expression estimation for RNA-seq
+* [Dumpster diving in RNA-sequencing to find the source of every last read](http://biorxiv.org/content/early/2016/05/13/053041) [ROP](https://github.com/smangul1/rop) is a computational protocol aimed to discover the source of all reads, which originated from complex RNA molecules, recombinant antibodies and microbial communities.
 
 **For mapping based methods, usually the raw reads are mapped to transcriptome or genome (need to model gaps by exon-exon junction), and then a gene/transcript level counts are obtained by**:     
 * [HTSeq-count](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html): one of the most popular counting tool, but it is slow.
