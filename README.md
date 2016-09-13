@@ -248,7 +248,9 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
 ### single cell tutorials
 * [Course material in notebook format for learning about single cell bioinformatics methods](https://github.com/YeoLab/single-cell-bioinformatics)
+* [Analysis of single cell RNA-seq data course, Cambridge University](https://github.com/hemberg-lab/scRNA.seq.course) Great tutorial!
 * [f1000 workflow paper A step-by-step workflow for low-level analysis of single-cell RNA-seq data](http://f1000research.com/articles/5-2122/v1) by Aaron Lun, the athour of diffHiC, GenomicInteractions and csaw.
+
 
 ### single cell RNA-seq normalization
 * [paper: Assessment of single cell RNA-seq normalization methods](http://biorxiv.org/content/early/2016/02/04/038612)
