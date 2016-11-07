@@ -52,7 +52,8 @@
 *  [paper: Normalization of RNA-seq data using factor analysis of control genes or samples](https://www.ncbi.nlm.nih.gov/pubmed/25150836 "Risso D et al. Nat Biotechnol 2014"): About spike-ins control and R normalization strategy - remove unwanted variation (RUV).
 *  [NVT](https://github.com/Edert/NVT) - an R package for the assessment of RNA-Seq normalization methods.
 *  [paper: Selecting between-sample RNA-Seq normalization methods from the perspective of their assumptions](http://arxiv.org/abs/1609.00959)  **A must read for RNA-seq normalization and to understand the assumptions for each normalization method!**
-* [YARN](http://bioconductor.org/packages/release/bioc/html/yarn.html) bioc package: Robust Multi-Condition RNA-Seq Preprocessing and Normalization
+* [YARN](http://bioconductor.org/packages/release/bioc/html/yarn.html) bioc package: Robust Multi-Condition RNA-Seq Preprocessing and Normalization.
+* [Smooth quantile normalization](https://github.com/stephaniehicks/qsmooth) or qsmooth is a generalization of quantile normalization, which is an average of the two types of assumptions about the data generation process: quantile normalization and quantile normalization between groups.
 
 #### Traditional way of RNA-seq analysis 
 
