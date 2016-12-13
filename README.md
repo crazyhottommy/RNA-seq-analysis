@@ -78,6 +78,10 @@ perform differential expression analysis ([Ballgown](http://www.nature.com/nbt/j
 
 [nature protocol:Transcript-level expression analysis of RNA-seq experiments with HISAT, StringTie and Ballgown](http://www.nature.com/nprot/journal/v11/n9/full/nprot.2016.095.html) 08/11/2016
 
+[Simulation-based comprehensive benchmarking of RNA-seq aligners](http://www.nature.com/nmeth/journal/vaop/ncurrent/pdf/nmeth.4106.pdf)
+A nature method paper.  
+>We found that performance varied by genome complexity, and accuracy and popularity were poorly correlated. The most widely cited tool underperforms for most metrics, particularly when using default settings
+
 [**RapMap**](http://biorxiv.org/content/early/2015/10/28/029652): A Rapid, Sensitive and Accurate Tool for Mapping RNA-seq Reads to Transcriptomes. From Sailfish group.
 
 * [BitSeq](http://bitseq.github.io/) Transcript isoform level expression and differential expression estimation for RNA-seq
