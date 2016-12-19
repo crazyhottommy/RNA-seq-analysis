@@ -211,7 +211,9 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
 ### Gene Set enrichment analysis
 * [Gene set analysis approaches for RNA-seq data: performance evaluation and application guideline](http://bib.oxfordjournals.org/content/early/2015/09/04/bib.bbv069.long)  
-* [Tutorial: RNA-seq differential expression & pathway analysis with Sailfish, DESeq2, GAGE, and Pathview](http://www.gettinggeneticsdone.com/2015/12/tutorial-rna-seq-differential.html)  
+* [Tutorial: RNA-seq differential expression & pathway analysis with Sailfish, DESeq2, GAGE, and Pathview](http://www.gettinggeneticsdone.com/2015/12/tutorial-rna-seq-differential.html)
+* [Metascape](http://metascape.org/gp/index.html) a web server for gene-set analysis.
+* [GSEA](http://software.broadinstitute.org/gsea/index.jsp) from Broad Institute.
 
 ### Pathway analysis
 * [Statistical analysis and visualization of functional profiles for gene and gene clusters: bioconductor clusterProfiler](http://www.bioconductor.org/packages/devel/bioc/html/clusterProfiler.html) by GuangChuang Yu from University of HongKong. Can do many jobs and GSEA like figure. It is very useful and I will give it a try besides 
