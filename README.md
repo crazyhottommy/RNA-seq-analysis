@@ -259,6 +259,11 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * paper [Characterizing noise structure in single-cell RNA-seq distinguishes genuine from technical stochastic allelic expression](http://www.nature.com/ncomms/2015/151022/ncomms9687/full/ncomms9687.html)  
 * paper [Tools and best practices for data processing in allelic expression analysis](http://www.genomebiology.com/2015/16/1/195)
 
+### immnune related
+* [ImReP](https://sergheimangul.wordpress.com/imrep/) is a computational method for rapid and accurate profiling of the adaptive immune repertoire from regular RNA-Seq data.
+* [Comprehensive analyses of tumor immunity: implications for cancer immunotherapy](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1028-7) 
+* [pVAC-Seq](https://github.com/griffithlab/pVAC-Seq) is a cancer immunotherapy pipeline for the identification of personalized Variant Antigens by Cancer Sequencing (pVAC-Seq) that integrates tumor mutation and expression data (DNA- and RNA-Seq). It enables cancer immunotherapy research by using massively parallel sequence data to predicting tumor-specific mutant peptides (neoantigens) that can elicit anti-tumor T cell immunity. 
+
 ### single cell tutorials
 * [Course material in notebook format for learning about single cell bioinformatics methods](https://github.com/YeoLab/single-cell-bioinformatics)
 * [Analysis of single cell RNA-seq data course, Cambridge University](https://github.com/hemberg-lab/scRNA.seq.course) Great tutorial!
