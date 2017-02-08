@@ -1,0 +1,6 @@
+# Path to an uncompressed FASTA file with all transcript sequences.
+CDNA: '/home/mtang1/annotations/mouse/mm10/Mus_musculus.GRCm38.cdna.ncrna.fa'
+
+OUT_DIR: 'out'
+# Path to a JSON file with samples and their corresponding FASTQ files.
+SAMPLES_JSON: './samples.json'

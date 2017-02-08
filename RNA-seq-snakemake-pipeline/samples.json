@@ -1,0 +1,26 @@
+{
+    "sample1": {
+        "R1": [
+            "/home/mtang1/git_repos/RNA-seq-analysis/RNA-seq-snakemake-pipeline/myfastqs/sample1/sample1_R1.fastq.gz"
+        ],
+        "R2": [
+            "/home/mtang1/git_repos/RNA-seq-analysis/RNA-seq-snakemake-pipeline/myfastqs/sample1/sample1_R2.fastq.gz"
+        ]
+    },
+    "sample2": {
+        "R1": [
+            "/home/mtang1/git_repos/RNA-seq-analysis/RNA-seq-snakemake-pipeline/myfastqs/sample2/sample2_R1.fastq.gz"
+        ],
+        "R2": [
+            "/home/mtang1/git_repos/RNA-seq-analysis/RNA-seq-snakemake-pipeline/myfastqs/sample2/sample2_R2.fastq.gz"
+        ]
+    },
+    "sample3": {
+        "R1": [
+            "/home/mtang1/git_repos/RNA-seq-analysis/RNA-seq-snakemake-pipeline/myfastqs/sample3/sample3_R1.fastq.gz"
+        ],
+        "R2": [
+            "/home/mtang1/git_repos/RNA-seq-analysis/RNA-seq-snakemake-pipeline/myfastqs/sample3/sample3_R2.fastq.gz"
+        ]
+    }
+}
