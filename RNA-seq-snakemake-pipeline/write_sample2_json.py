@@ -5,15 +5,22 @@
 import json
 from glob import glob
 import argparse
+import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--fastq_dir", help="Required. the full path to the fastq folder")
 args = parser.parse_args()
 
-# assert args.fastq_dir is not None, "please provide the path to the fastq folder"
+assert args.fastq_dir is not None, "please provide the path to the fastq folder"
 
 # the fastq_dir is the fastq folder contain many sub-folders. each subfolder's name is the sample name, and within each subfolder are the 
 # fastq files for that sample
+# check if folder exists:
+if not os.path.exists(args.fastq_dir):
+	print("fastq folder does not exist")
+	exit()
+
+# glob all the fastq files
 fastqs = glob(args.fastq_dir + '/*/*fastq.gz')
 FILES = {}
 
