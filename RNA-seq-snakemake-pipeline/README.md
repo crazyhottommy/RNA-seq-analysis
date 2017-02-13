@@ -8,7 +8,7 @@ To creat the `samples.json` file, feed the script with the full path to the fast
 # conda environment
 source activate snakemake
 
- python3 write_sample2_json.py --fastq_dir ~/git_repos/RNA-seq-analysis/RNA-seq-snakemake-pipeline/myfastqs
+python3 write_sample2_json.py --fastq_dir ~/git_repos/RNA-seq-analysis/RNA-seq-snakemake-pipeline/myfastqs
 ````
 
 ```bash
