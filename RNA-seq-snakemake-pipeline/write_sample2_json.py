@@ -12,12 +12,12 @@ args = parser.parse_args()
 
 # assert args.fastq_dir is not None, "please provide the path to the fastq folder"
 
-
-# Change this line to match your filenames.
+# the fastq_dir is the fastq folder contain many sub-folders. each subfolder's name is the sample name, and within each subfolder are the 
+# fastq files for that sample
 fastqs = glob(args.fastq_dir + '/*/*fastq.gz')
 FILES = {}
 
-# Change this line to extract a sample name from each filename, the folder name is the sample name
+# Change this line to extract a sample name from each filename, the folder name is the sample name in my case
 SAMPLES = [fastq.split('/')[-2] for fastq in fastqs]
 
 for sample in SAMPLES:
