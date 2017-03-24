@@ -255,6 +255,9 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * RNApol2 ChIP-seq
 * [iRNA-seq: computational method for genome-wide assessment of acute transcriptional regulation from total RNA-seq data](http://nar.oxfordjournals.org/content/43/6/e40.long)  
 
+### intron retention
+* [IRFinder](https://github.com/williamritchie/IRFinder)
+
 ### Allel specific expression
 * paper [Tools and best practices for data processing in allelic expression analysis](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0762-6)
 * paper [Characterizing noise structure in single-cell RNA-seq distinguishes genuine from technical stochastic allelic expression](http://www.nature.com/ncomms/2015/151022/ncomms9687/full/ncomms9687.html)  
