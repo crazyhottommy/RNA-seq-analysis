@@ -29,10 +29,12 @@
 *  [review: Translating RNA sequencing into clinical diagnostics: opportunities and challenges](http://www.nature.com/nrg/journal/v17/n5/full/nrg.2016.10.html)
 
 ### RNA-seq experimental design 
+* [Thinking about Designing RNA Seq Experiments to Measure Differential Gene Expression: The Basics](http://michelebusby.tumblr.com/post/26913184737/thinking-about-designing-rna-seq-experiments-to) a blog post 
 * [Tutorial: Rna Seq Experimental Design For Measuring Differential Gene Expression from biostars](https://www.biostars.org/p/65824/)
 * [Scotty - Power Analysis for RNA Seq Experiments](http://bioinformatics.bc.edu/marthlab/scotty/scotty.php)  
 * [Experimental Design in Differential Abundance analysis web server](http://edda.gis.a-star.edu.sg/)  
 * [Experimental Design in Differential Abundance analysis bioconductor package](http://www.bioconductor.org/packages/devel/bioc/html/EDDA.html)
+
 
 ### Quality Control
 
