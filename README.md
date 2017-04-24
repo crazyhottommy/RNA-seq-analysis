@@ -211,6 +211,8 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [OMics Compendia Commons (OMiCC)](https://omicc.niaid.nih.gov/) OMiCC is a community-based, biologist-friendly web platform for creating and (meta-) analyzing annotated gene-expression data compendia across studies and technology platforms for more than 24,000 human and mouse studies from Gene Expression Omnibus (GEO)
 * [Expression Atlas update--an integrated database of gene and protein expression in humans, animals and plants](http://www.ebi.ac.uk/gxa/home) It consists of selected microarray and RNA-sequencing studies from ArrayExpress, which have been manually curated, annotated with ontology terms, checked for high quality and processed using standardised analysis methods. Since the last update, Atlas has grown seven-fold (1572 studies as of August 2015), and incorporates baseline expression profiles of tissues from Human Protein Atlas, GTEx and FANTOM5, and of cancer cell lines from ENCODE, CCLE and Genentech projects.
 * [scRNASeqDB](https://bioinfo.uth.edu/scrnaseqdb/) a database for gene expression profiling in human single cell by RNA-seq
+* [JingleBells] (http://jinglebells.bgu.ac.il/) - A repository of standardized single cell RNA-Seq datasets for analysis and visualization in IGV of the raw reads at the single cell level. Currently focused on immune cells. (http://www.jimmunol.org/content/198/9/3375.long)
+
 
 ### Gene Set enrichment analysis
 * [Gene set analysis approaches for RNA-seq data: performance evaluation and application guideline](http://bib.oxfordjournals.org/content/early/2015/09/04/bib.bbv069.long)  
@@ -269,6 +271,8 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [ImReP](https://sergheimangul.wordpress.com/imrep/) is a computational method for rapid and accurate profiling of the adaptive immune repertoire from regular RNA-Seq data.
 * [Comprehensive analyses of tumor immunity: implications for cancer immunotherapy](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1028-7) 
 * [pVAC-Seq](https://github.com/griffithlab/pVAC-Seq) is a cancer immunotherapy pipeline for the identification of personalized Variant Antigens by Cancer Sequencing (pVAC-Seq) that integrates tumor mutation and expression data (DNA- and RNA-Seq). It enables cancer immunotherapy research by using massively parallel sequence data to predicting tumor-specific mutant peptides (neoantigens) that can elicit anti-tumor T cell immunity. 
+* [JingleBells] (http://jinglebells.bgu.ac.il/) - A repository of standardized single cell RNA-Seq datasets for analysis and visualization in IGV of the raw reads at the single cell level. Currently focused on immune cells. (http://www.jimmunol.org/content/198/9/3375.long)
+
 
 ### single cell tutorials
 * [Course material in notebook format for learning about single cell bioinformatics methods](https://github.com/YeoLab/single-cell-bioinformatics)
