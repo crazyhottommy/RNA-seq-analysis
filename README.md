@@ -145,6 +145,7 @@ The paper transcript-level estimates improve gene-level inferences above also ta
 3) differential transcript expression (DTE) studies, where the interest lies in whether individual transcripts show differential expression between conditions.  
 ![](https://cloud.githubusercontent.com/assets/4106146/18142832/e86c1dd4-6f84-11e6-8efb-8dd404e2942a.png)
 
+! [MATS](http://rnaseq-mats.sourceforge.net/rmatsdockerbeta/) is a computational tool to detect differential alternative splicing events from RNA-Seq data. The statistical model of MATS calculates the P-value and false discovery rate that the difference in the isoform ratio of a gene between two conditions exceeds a given user-defined threshold.
 
 ### Blog posts on Kallisto/Salmon
 1. [Comparing unpublished RNA-Seq gene expression quantifiers](http://nxn.se/post/118321890480/comparing-unpublished-rna-seq-gene-expression)  
