@@ -286,6 +286,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
 ### single cell RNA-seq normalization
 * [paper: Assessment of single cell RNA-seq normalization methods](http://biorxiv.org/content/early/2016/07/17/064329)
+* [Normalizing single-cell RNA sequencing data: challenges and opportunities](https://www.nature.com/nmeth/journal/v14/n6/full/nmeth.4292.html) Nature Methods
 * [SinQC: A Method and Tool to Control Single-cell RNA-seq Data Quality](http://www.morgridge.net/SinQC.html).
 * [Scone](https://github.com/YosefLab/scone) Single-Cell Overview of Normalized Expression data
 
