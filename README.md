@@ -181,6 +181,10 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
 >Isolator has a particular focus on producing stable, consistent estimates. Maximum likelihood approaches produce unstable point estimates: small changes in the data can result in drastically different results, conflating downstream analysis like clustering or PCA. Isolator produces estimates that are in general, simultaneously more stable and more accurate other methods
 
+### Circular RNA
+
+* a bunch of [tools](https://github.com/dieterich-lab/)  from Dieterich Lab in github.
+
 ### Batch effects
 [TACKLING BATCH EFFECTS AND BIAS IN TRANSCRIPT EXPRESSION](http://mikelove.github.io/eurobioc2015/#/slide-1) by mike love  
 [paper:Tackling the widespread and critical impact of batch effects in high-throughput data](http://www.nature.com/nrg/journal/v11/n10/full/nrg2825.html) by Jeffrey T. Leek in Rafael A. Irizarry's lab.  
