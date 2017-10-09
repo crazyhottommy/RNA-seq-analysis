@@ -244,6 +244,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [Pegasus](https://sourceforge.net/p/pegasus-fus/wiki/Main%20Manual/) Fusion Annotation and Prediction.
 * [Oncofuse](https://github.com/mikessh/oncofuse) is a framework designed to estimate the oncogenic potential of de-novo discovered gene fusions. It uses several hallmark features and employs a bayesian classifier to provide the probability of a given gene fusion being a driver mutation.
 * [chimeraviz](http://bioconductor.org/packages/devel/bioc/html/chimeraviz.html) Visualization tools for gene fusions.
+* [SQUID](https://github.com/Kingsford-Group/squid): [Transcriptomic Structural Variation Detection from RNA-seq](https://www.biorxiv.org/content/early/2017/09/06/162776)
 
 ### Alternative splicing
 * [SplicePlot: a tool for visualizing alternative splicing](http://montgomerylab.stanford.edu/spliceplot/index.html) Sashimi plots
