@@ -206,6 +206,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 [blog post for it](http://genomespot.blogspot.com/2015/10/introducing-digital-expression-explorer.html?utm_content=bufferb6214&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 * [SHARQ Search public, human, RNA-seq experiments by cell, tissue type, and other features | Indexing 19807 files](http://sharq.compbio.cs.cmu.edu/)
 * [MetaSRA: normalized sample-specific metadata for the Sequence Read Archive](http://biorxiv.org/content/early/2016/11/30/090506)
+* [ARCHS4: Massive Mining of Publicly Available RNA-seq Data from Human and Mouse](https://amp.pharm.mssm.edu/archs4/) ARCHS4 provides access to gene counts from HiSeq 2000, HiSeq 2500 and NextSeq 500 platforms for human and mouse experiments from GEO and SRA. 
 * [RESTful RNA-seq Analysis API](http://www.ebi.ac.uk/about/news/service-news/new-restful-rna-seq-analysis-api) A simple RESTful API to access analysis results of all public RNAseq data for nearly 200 species in European Nucleotide Archive.
 * [intropolis](https://github.com/nellore/intropolis) is a list of exon-exon junctions found across **21,504** human RNA-seq samples on the Sequence Read Archive (SRA) from spliced read alignment to hg19 with Rail-RNA. Two files are provided:
 * [ExpressionAtlas bioconductor package](http://www.bioconductor.org/packages/release/bioc/html/ExpressionAtlas.html):
@@ -219,7 +220,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [shinyGEO](http://gdancik.github.io/shinyGEO/) a web-based application for performing differential expression and survival analysis on Gene Expression Omnibus datasets.
 * [Expression Atlas update--an integrated database of gene and protein expression in humans, animals and plants](http://www.ebi.ac.uk/gxa/home) It consists of selected microarray and RNA-sequencing studies from ArrayExpress, which have been manually curated, annotated with ontology terms, checked for high quality and processed using standardised analysis methods. Since the last update, Atlas has grown seven-fold (1572 studies as of August 2015), and incorporates baseline expression profiles of tissues from Human Protein Atlas, GTEx and FANTOM5, and of cancer cell lines from ENCODE, CCLE and Genentech projects.
 * [scRNASeqDB](https://bioinfo.uth.edu/scrnaseqdb/) a database for gene expression profiling in human single cell by RNA-seq
-* [JingleBells] (http://jinglebells.bgu.ac.il/) - A repository of standardized single cell RNA-Seq datasets for analysis and visualization in IGV of the raw reads at the single cell level. Currently focused on immune cells. (http://www.jimmunol.org/content/198/9/3375.long)
+* [JingleBells](http://jinglebells.bgu.ac.il/) - A repository of standardized single cell RNA-Seq datasets for analysis and visualization in IGV of the raw reads at the single cell level. Currently focused on immune cells. (http://www.jimmunol.org/content/198/9/3375.long)
 
 
 ### Gene Set enrichment analysis
