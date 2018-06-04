@@ -27,6 +27,7 @@
 *  [paper: Reproducibility of high-throughput mRNA and small RNA sequencing across laboratories](http://www.nature.com/nbt/journal/v31/n11/full/nbt.2702.html)
 *  [paper: Cross-platform normalization of microarray and RNA-seq data for machine learning applications](https://peerj.com/articles/1621/#results|discussion). [Tool](https://github.com/greenelab/TDM) 
 *  [review: Translating RNA sequencing into clinical diagnostics: opportunities and challenges](http://www.nature.com/nrg/journal/v17/n5/full/nrg.2016.10.html)
+* [paper: Thousands of large-scale RNA sequencing experiments yield a comprehensive new human gene list and reveal extensive transcriptional noise](https://www.biorxiv.org/content/early/2018/05/29/332825)
 
 ### RNA-seq experimental design 
 * [Thinking about Designing RNA Seq Experiments to Measure Differential Gene Expression: The Basics](http://michelebusby.tumblr.com/post/26913184737/thinking-about-designing-rna-seq-experiments-to) a blog post 
