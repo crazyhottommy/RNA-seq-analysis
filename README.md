@@ -147,6 +147,8 @@ The paper transcript-level estimates improve gene-level inferences above also ta
 3) differential transcript expression (DTE) studies, where the interest lies in whether individual transcripts show differential expression between conditions.  
 ![](https://cloud.githubusercontent.com/assets/4106146/18142832/e86c1dd4-6f84-11e6-8efb-8dd404e2942a.png)
 
+* [Swimming downstream: statistical analysis of differential transcript usage following Salmon quantification](https://f1000research.com/articles/7-952/v1)
+
 ! [MATS](http://rnaseq-mats.sourceforge.net/rmatsdockerbeta/) is a computational tool to detect differential alternative splicing events from RNA-Seq data. The statistical model of MATS calculates the P-value and false discovery rate that the difference in the isoform ratio of a gene between two conditions exceeds a given user-defined threshold.
 
 ### Blog posts on Kallisto/Salmon
@@ -260,6 +262,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [SUPPA](https://bitbucket.org/regulatorygenomicsupf/suppa) This tool generates different Alternative Splicing (AS) events and calculates the PSI ("Percentage Spliced In") value for each event exploiting the fast quantification of transcript abundances from multiple samples.
 * [IntSplice](http://www.med.nagoya-u.ac.jp/neurogenetics/IntSplice/): Upload a VCF (variant call format) file to predict if an SNV (single nucleotide variation) from intronic positions -50 to -3 is pathogenic or not.
 * [Whippet](http://www.biorxiv.org/content/early/2017/07/03/158519): an efficient method for the detection and quantification of alternative splicing reveals extensive transcriptomic complexity
+
 
 ### microRNAs and non-coding RNAs
 * [miARma-Seq workflow](http://miarmaseq.cbbio.es/) miRNA-Seq And RNA-Seq Multiprocess Analysis tool, a comprehensive pipeline analysis suite designed for mRNA, miRNA and circRNA identification and differential expression analysis, applicable to any sequenced organism.
