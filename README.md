@@ -50,6 +50,30 @@ Normalization is essential for RNAseq analysis. However, one needs to understand
 
 read this very important paper by Rafael A Irizarry: [Genome-wide repressive capacity of promoter DNA methylation is revealed through epigenomic manipulation](https://www.biorxiv.org/content/early/2018/08/01/381145)
 
+DESseq2 normalization by Simon Anders:
+>To estimate the library size, simply taking the total number of (mapped or unmapped) reads is, in our experience, not a good idea.
+Sometimes, a few very strongly expressed genes are differentially expressed, and as they make up a good part of the total counts, they skew this number. After you divide by total counts, these few strongly expressed genes become equal, and the whole rest looks differentially expressed.
+
+>The following simple alternative works much better:
+
+>- Construct a "reference sample" by taking, for each gene, the geometric mean of the counts in all samples.
+
+>- To get the sequencing depth of a sample relative to the reference, calculate for each gene the quotient of the counts in your sample divided by the counts of the reference sample. Now you have, for each gene, an estimate of the depth ratio. 
+
+>- Simply take the median of all the quotients to get the relative depth of the library.
+
+>This is what the `estimateSizeFactors` function of our DESeq package doese.
+
+If one wants to use a set of genes that are not affected by the global change, do
+
+```r
+cds = newCountDataSet(CountTable, Design$condition )
+dds <- estimateSizeFactors(dds, 
+                           controlGenes = rownames(dds) %in% norm_genes)
+dds_global <- estimateSizeFactors(dds)
+dds_global <- DESeq(dds_global)
+res_global <- results(dds_global)
+```
 *  [A Comparison of Methods: Normalizing High-Throughput RNA Sequencing Data](http://biorxiv.org/content/early/2015/09/03/026062)
 *  [Errors in RNA-Seq quantification affect genes of relevance to human disease](http://www.genomebiology.com/2015/16/1/177)  
 *  [A comprehensive evaluation of ensembl, RefSeq, and UCSC annotations in the context of RNA-seq read mapping and gene quantification](http://www.biomedcentral.com/1471-2164/16/97)  
