@@ -46,6 +46,10 @@
 
 ### Normalization, quantification, and differential expression
 
+Normalization is essential for RNAseq analysis. However, one needs to understand the underlining assumptions for each methods. Most methods assume there is no global changes between conditions (e.g. TMM normalization). However, this may not be true when global effect occurs. For example, if you delete a gene that controls transcription, you expect to see global gene expression reduction. In that case, other normalization methods need to be considered. (e.g. spike-in controls). The same principle applies to other high-throughput sequencing data such as ChIPseq.
+
+read this very important paper by Rafael A Irizarry: [Genome-wide repressive capacity of promoter DNA methylation is revealed through epigenomic manipulation](https://www.biorxiv.org/content/early/2018/08/01/381145)
+
 *  [A Comparison of Methods: Normalizing High-Throughput RNA Sequencing Data](http://biorxiv.org/content/early/2015/09/03/026062)
 *  [Errors in RNA-Seq quantification affect genes of relevance to human disease](http://www.genomebiology.com/2015/16/1/177)  
 *  [A comprehensive evaluation of ensembl, RefSeq, and UCSC annotations in the context of RNA-seq read mapping and gene quantification](http://www.biomedcentral.com/1471-2164/16/97)  
