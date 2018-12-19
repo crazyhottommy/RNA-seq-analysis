@@ -1,3 +1,12 @@
+**UPDATE: 2018-12-19**
+
+[Mike Love](https://github.com/crazyhottommy/RNA-seq-analysis/issues/8) pointed out that in DESeq2,
+
+>Around 2014 we implemented `lfcThreshold` as an argument of `results()` which takes care of everything for the use
+
+Please refer to [this section of the vignette](https://www.bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#tests-of-log2-fold-change-above-or-below-a-threshold) for the "not DE" analysis.
+
+
 I read a [post](http://watson.nci.nih.gov/~sdavis/blog/testing-for-non-differentially-expressed-genes/) by Sean Davis @NCI discussing
 how to detect non-differential expressed genes.
 I keep it a note here as it is sometimes desirable to find such genes or ChIP-seq regions that are not changed after treatment.
