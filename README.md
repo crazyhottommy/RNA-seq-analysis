@@ -239,6 +239,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 ### Databases
 * [BioJupies Automatically Generates RNA-seq Data Analysis Notebooks](https://amp.pharm.mssm.edu/biojupies/) With BioJupies you can produce in seconds a customized, reusable, and interactive report from your own raw or processed RNA-seq data through a simple user interface
 * [RNA meta analysis](https://rnama.com/docs/search-evaluation) has ~26,700 studies (5,717 RNA-Seq and 20,955 Microarray). https://rnama.com/  Based on 750 manually labeled studies, our clustering algorithm correctly identifies 91% of sample groups.
+* [refine.bio](https://www.refine.bio/)will have harmonized over 60,000 gene expression experiments
 * [ReCount is an online resource consisting of RNA-seq gene count datasets built using the raw data from 18 different studies](http://bowtie-bio.sourceforge.net/recount/) updated version [here](https://jhubiostatistics.shinyapps.io/recount/)
 * [The conquer (consistent quantification of external rna-seq data)](http://imlspenticton.uzh.ch:3838/conquer/) repository is developed by Charlotte Soneson and Mark D Robinson at the University of Zurich, Switzerland. single cell RNA-seq data sets.
 * [The Lair](http://pachterlab.github.io/lair/): a resource for exploratory analysis of published RNA-Seq data. From Lior Pachter group!
