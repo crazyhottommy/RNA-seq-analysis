@@ -67,7 +67,7 @@ Sometimes, a few very strongly expressed genes are differentially expressed, and
 If one wants to use a set of genes that are not affected by the global change, do
 
 ```r
-cds = newCountDataSet(CountTable, Design$condition )
+dds = newCountDataSet(CountTable, Design$condition )
 dds <- estimateSizeFactors(dds, 
                            controlGenes = rownames(dds) %in% norm_genes)
 dds_global <- estimateSizeFactors(dds)
@@ -77,7 +77,7 @@ res_global <- results(dds_global)
 or give self-defined size factors.
 
 ```r
-sizeFactors(cds) = c(my_Values)
+sizeFactors(dds) = c(my_Values)
 ```
 *  [A Comparison of Methods: Normalizing High-Throughput RNA Sequencing Data](http://biorxiv.org/content/early/2015/09/03/026062)
 *  [Errors in RNA-Seq quantification affect genes of relevance to human disease](http://www.genomebiology.com/2015/16/1/177)  
