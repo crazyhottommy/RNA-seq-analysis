@@ -282,6 +282,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
  Ensemble of Gene Set Enrichment Analyses. By Gordon Smith. take a look!
 
 ### Fusion gene detection
+* [arriba](https://github.com/suhrig/arriba)Fast and accurate gene fusion detection from RNA-Seq data. top performer of ICGC-TCGA DREAM competition.
 * [fusioncatcher](https://github.com/ndaniel/fusioncatcher)  
 * [PRADA](https://github.com/crazyhottommy/PRADA_pipeline_Verhaak_lab) from our lab
 * [Fusion Matcher](https://github.com/ErasmusMC-Bioinformatics/fuma): Match predicted fusions according to chromosomal location or gene annotation(s)
