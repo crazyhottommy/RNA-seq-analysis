@@ -247,6 +247,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 [blog post for it](http://genomespot.blogspot.com/2015/10/introducing-digital-expression-explorer.html?utm_content=bufferb6214&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 * [Extracting allelic read counts from 250,000 human sequencing runs in Sequence Read Archive](https://www.biorxiv.org/content/early/2018/08/07/386441?rss=1) [data](https://www.synapse.org/#!Synapse:syn11415602/wiki/492470)
 * [SHARQ Search public, human, RNA-seq experiments by cell, tissue type, and other features | Indexing 19807 files](http://sharq.compbio.cs.cmu.edu/)
+* [dee2](http://dee2.io/) Digital Expression Explorer 2. Digital Expression Explorer 2 (DEE2) is a repository of uniformly processed RNA-seq data mined from public data obtained from NCBI Short Read Archive. By Ziemann Mark et.al!
 * [MetaSRA: normalized sample-specific metadata for the Sequence Read Archive](http://biorxiv.org/content/early/2016/11/30/090506)
 * [ARCHS4: Massive Mining of Publicly Available RNA-seq Data from Human and Mouse](https://amp.pharm.mssm.edu/archs4/) ARCHS4 provides access to gene counts from HiSeq 2000, HiSeq 2500 and NextSeq 500 platforms for human and mouse experiments from GEO and SRA. 
 * [SRA-explorer](https://ewels.github.io/sra-explorer/) This tool aims to make datasets within the Sequence Read Archive more accessible.
