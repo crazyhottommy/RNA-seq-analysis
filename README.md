@@ -283,6 +283,8 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [EGSEA](https://bioconductor.org/packages/release/bioc/html/EGSEA.html)
  Ensemble of Gene Set Enrichment Analyses. By Gordon Smith. take a look!
 * [DESeq to fgsea](https://stephenturner.github.io/deseq-to-fgsea/) tutorial by Stephen Turner.
+* [Lightweight Iterative Gene set Enrichment in R (LIGER)](https://github.com/JEFworks/liger) by Jean Fan.
+* [Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap](https://www.nature.com/articles/s41596-018-0103-9) 2019 Nature Protocol
 
 ### Fusion gene detection
 * [arriba](https://github.com/suhrig/arriba)Fast and accurate gene fusion detection from RNA-Seq data. top performer of ICGC-TCGA DREAM competition.
