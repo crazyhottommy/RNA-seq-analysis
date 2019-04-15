@@ -259,6 +259,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [batch recompute ~20,000 RNA-seq samples from larget sequencing project such as TCGA, TARGET and GETEX](https://genome-cancer.soe.ucsc.edu/proj/site/xena/datapages/?host=https://toil.xenahubs.net). Used `hg38` and `gencode v21` as annotation.
 * [A cloud-based workflow to quantify transcript-expression levels in public cancer compendia](http://biorxiv.org/content/early/2016/07/12/063552) used kallisto for TCGA/CCLE datasets and gencode v24 as annotation.
 * [OMics Compendia Commons (OMiCC)](https://omicc.niaid.nih.gov/) OMiCC is a community-based, biologist-friendly web platform for creating and (meta-) analyzing annotated gene-expression data compendia across studies and technology platforms for more than 24,000 human and mouse studies from Gene Expression Omnibus (GEO)
+* [GEIPA](http://gepia.cancer-pku.cn/) interactively explore TCGA expression data, survival etc
 * [GEOdiver](http://www.geodiver.co.uk/) An easy to use web tool for analysing GEO datasets.
 * [ScanGEO](http://scangeo.dartmouth.edu/ScanGEO/) - parallel mining of high-throughput gene expression data
 * [shinyGEO](http://gdancik.github.io/shinyGEO/) a web-based application for performing differential expression and survival analysis on Gene Expression Omnibus datasets.
