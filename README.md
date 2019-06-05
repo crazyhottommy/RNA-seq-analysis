@@ -251,6 +251,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [MetaSRA: normalized sample-specific metadata for the Sequence Read Archive](http://biorxiv.org/content/early/2016/11/30/090506)
 * [ARCHS4: Massive Mining of Publicly Available RNA-seq Data from Human and Mouse](https://amp.pharm.mssm.edu/archs4/) ARCHS4 provides access to gene counts from HiSeq 2000, HiSeq 2500 and NextSeq 500 platforms for human and mouse experiments from GEO and SRA. 
 * [SRA-explorer](https://ewels.github.io/sra-explorer/) This tool aims to make datasets within the Sequence Read Archive more accessible.
+* [OmicIDX on BigQuery](https://seandavi.github.io/2019/06/omicidx-on-bigquery/) by Sean Davis who develped SRAdb at NIH. In practice, the OmicIDX mines data from the NCBI Sequence Read Archive (SRA) and NCBI Biosample databases (updated daily).
 * [RESTful RNA-seq Analysis API](http://www.ebi.ac.uk/about/news/service-news/new-restful-rna-seq-analysis-api) A simple RESTful API to access analysis results of all public RNAseq data for nearly 200 species in European Nucleotide Archive.
 * [intropolis](https://github.com/nellore/intropolis) is a list of exon-exon junctions found across **21,504** human RNA-seq samples on the Sequence Read Archive (SRA) from spliced read alignment to hg19 with Rail-RNA. Two files are provided:
 * [ExpressionAtlas bioconductor package](http://www.bioconductor.org/packages/release/bioc/html/ExpressionAtlas.html):
