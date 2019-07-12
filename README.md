@@ -339,6 +339,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [Comprehensive analyses of tumor immunity: implications for cancer immunotherapy](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1028-7) 
 * [pVAC-Seq](https://github.com/griffithlab/pVAC-Seq) is a cancer immunotherapy pipeline for the identification of personalized Variant Antigens by Cancer Sequencing (pVAC-Seq) that integrates tumor mutation and expression data (DNA- and RNA-Seq). It enables cancer immunotherapy research by using massively parallel sequence data to predicting tumor-specific mutant peptides (neoantigens) that can elicit anti-tumor T cell immunity. 
 * [JingleBells] (http://jinglebells.bgu.ac.il/) - A repository of standardized single cell RNA-Seq datasets for analysis and visualization in IGV of the raw reads at the single cell level. Currently focused on immune cells. (http://www.jimmunol.org/content/198/9/3375.long)
+* [immunedeconv](https://grst.github.io/immunedeconv/) - an R package for unified access to computational methods for estimating immune cell fractions from bulk RNA sequencing data.
 
 ### Reads from xenografts
 
