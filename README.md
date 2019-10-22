@@ -292,6 +292,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap](https://www.nature.com/articles/s41596-018-0103-9) 2019 Nature Protocol
 
 ### Fusion gene detection
+* [Accuracy assessment of fusion transcript detection via read-mapping and de novo fusion transcript assembly-based methods](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1842-9) Overall, STAR-Fusion, Arriba, and STAR-SEQR are the most accurate and fastest for fusion detection on cancer transcriptomes.
 * [arriba](https://github.com/suhrig/arriba)Fast and accurate gene fusion detection from RNA-Seq data. top performer of ICGC-TCGA DREAM competition.
 * [fusioncatcher](https://github.com/ndaniel/fusioncatcher)  
 * [PRADA](https://github.com/crazyhottommy/PRADA_pipeline_Verhaak_lab) from our lab
