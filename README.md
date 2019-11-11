@@ -13,6 +13,7 @@
 
 ### RNA-seq specific 
 
+*  [RNA sequencing: the teenage years](https://www.ncbi.nlm.nih.gov/pubmed/31341269) A nice review.
 *  [RNA Sequencing Data: Hitchhiker's Guide to Expression Analysis](https://www.annualreviews.org/doi/10.1146/annurev-biodatasci-072018-021255)
 *  [Introduction to RNA-seq analysis youtube video](https://www.youtube.com/watch?v=OEbjHPk20C0&feature=youtu.be&a)  
 *  [RNAseq differential expression analysis – NGS2015](https://monsterbashseq.wordpress.com/2015/08/26/rnaseq-differential-expression-analysis-ngs2015/)  
