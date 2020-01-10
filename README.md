@@ -239,6 +239,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 [A framework for RNA quality correction in differential expression analysis](http://www.biorxiv.org/content/early/2016/09/09/074245)
 
 ### Databases
+* [MiPanda](http://www.mipanda.org/) is an online resource for the interrogation and visualization of gene expression data from the myriad of publicly available cancer and normal next generation sequencing datasets.
 * [KnockTF a comprehensive human gene expression profile database with knockdown/knockout of transcription factors](http://www.licpathway.net/KnockTF/index.html)
 * [BioJupies Automatically Generates RNA-seq Data Analysis Notebooks](https://amp.pharm.mssm.edu/biojupies/) With BioJupies you can produce in seconds a customized, reusable, and interactive report from your own raw or processed RNA-seq data through a simple user interface
 * [RNA meta analysis](https://rnama.com/docs/search-evaluation) has ~26,700 studies (5,717 RNA-Seq and 20,955 Microarray). https://rnama.com/  Based on 750 manually labeled studies, our clustering algorithm correctly identifies 91% of sample groups.
