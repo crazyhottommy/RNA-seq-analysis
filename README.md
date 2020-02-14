@@ -415,5 +415,8 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [CIDR: Ultrafast and accurate clustering through imputation for single cell RNA-Seq data](http://biorxiv.org/content/early/2016/08/10/068775)
 * [SC3](http://bioconductor.org/packages/release/bioc/html/SC3.html)- consensus clustering of single-cell RNA-Seq data.  SC3 achieves high accuracy and robustness by consistently integrating different clustering solutions through a consensus approach. Tests on twelve published datasets show that SC3 outperforms five existing methods while remaining scalable, as shown by the analysis of a large dataset containing 44,808 cells. Moreover, an interactive graphical implementation makes SC3 accessible to a wide audience of users, and SC3 aids biological interpretation by identifying marker genes, differentially expressed genes and outlier cells.
 
+### nanostring
+* [NACHO (NAnostring quality Control dasHbOard) is developed for NanoString nCounter data.](https://mcanouil.github.io/NACHO/articles/NACHO.html#overview)
+
 ### advance of scRNA-seq tech
 * [Single-cell profiling of the developing mouse brain and spinal cord with split-pool barcoding](http://science.sciencemag.org/content/360/6385/176) no isolation of single cells needed!
