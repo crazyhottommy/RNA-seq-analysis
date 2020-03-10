@@ -333,6 +333,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
 ### intron retention
 * [IRFinder](https://github.com/williamritchie/IRFinder)
+* [iread](https://github.com/genemine/iread) read this paper comparing IRFinder https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6541-0
 
 ### Allel specific expression
 * paper [Tools and best practices for data processing in allelic expression analysis](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0762-6)
