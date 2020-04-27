@@ -148,7 +148,8 @@ Finally, differential expression is carried out by
 
 * [In RNA-Seq, 2 != 2: Between-sample normalization](https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/)  
 * [RPKM/FPKM, TPM and raw counts for RNA-seq](http://crazyhottommy.blogspot.com/2015/06/rpkmfpkm-tpm-and-raw-counts-for-rna-seq.html)  
-* [Youtube video counts vs TPM](https://www.youtube.com/watch?v=ztyjiCCt_lM)
+* [Youtube video counts vs TPM](https://www.youtube.com/watch?v=ztyjiCCt_lM)\
+* [Misuse of RPKM or TPM normalization when comparing across samples and sequencing protocols](https://rnajournal.cshlp.org/content/early/2020/04/13/rna.074922.120)
 
 ### Benchmarking 
 [bcbio.rnaseq](https://github.com/roryk/bcbio.rnaseq)    
