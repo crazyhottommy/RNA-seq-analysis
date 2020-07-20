@@ -298,6 +298,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 
 ### Fusion gene detection
 * [Accuracy assessment of fusion transcript detection via read-mapping and de novo fusion transcript assembly-based methods](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1842-9) Overall, STAR-Fusion, Arriba, and STAR-SEQR are the most accurate and fastest for fusion detection on cancer transcriptomes.
+* [MINTIE](https://www.biorxiv.org/content/10.1101/2020.06.03.131532v1): identifying novel structural and splice variants in transcriptomes using RNA-seq data
 * [arriba](https://github.com/suhrig/arriba)Fast and accurate gene fusion detection from RNA-Seq data. top performer of ICGC-TCGA DREAM competition.
 * [fusioncatcher](https://github.com/ndaniel/fusioncatcher)  
 * [PRADA](https://github.com/crazyhottommy/PRADA_pipeline_Verhaak_lab) from our lab
@@ -309,6 +310,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [Oncofuse](https://github.com/mikessh/oncofuse) is a framework designed to estimate the oncogenic potential of de-novo discovered gene fusions. It uses several hallmark features and employs a bayesian classifier to provide the probability of a given gene fusion being a driver mutation.
 * [chimeraviz](http://bioconductor.org/packages/devel/bioc/html/chimeraviz.html) Visualization tools for gene fusions.
 * [SQUID](https://github.com/Kingsford-Group/squid): [Transcriptomic Structural Variation Detection from RNA-seq](https://www.biorxiv.org/content/early/2017/09/06/162776)
+
 
 ### Alternative splicing
 * [SplicePlot: a tool for visualizing alternative splicing](http://montgomerylab.stanford.edu/spliceplot/index.html) Sashimi plots
