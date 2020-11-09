@@ -227,17 +227,19 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * a bunch of [tools](https://github.com/dieterich-lab/)  from Dieterich Lab in github.
 
 ### Batch effects
-[TACKLING BATCH EFFECTS AND BIAS IN TRANSCRIPT EXPRESSION](http://mikelove.github.io/eurobioc2015/#/slide-1) by mike love  
+
+* [ComBat-seq](https://github.com/zhangyuqing/ComBat-seq) is a batch effect adjustment tool for bulk RNA-seq count data. It is an improved model based on the popular ComBat. "In addition, ComBat-seq provides adjusted data which preserves the integer nature of counts, so that the adjusted data are compatible with the assumptions of state-of-the-art differential expression software (e.g. edgeR, DESeq2, which specifically request untransformed count data)"
+* [TACKLING BATCH EFFECTS AND BIAS IN TRANSCRIPT EXPRESSION](http://mikelove.github.io/eurobioc2015/#/slide-1) by mike love  
 [paper:Tackling the widespread and critical impact of batch effects in high-throughput data](http://www.nature.com/nrg/journal/v11/n10/full/nrg2825.html) by Jeffrey T. Leek in Rafael A. Irizarry's lab.  
-[A reanalysis of mouse ENCODE comparative gene expression data](http://f1000research.com/articles/4-121/v1)  
-[Is it species or is it batch? They are confounded, so we can't know](http://simplystatistics.org/2015/05/20/is-it-species-or-is-it-batch-they-are-confounded-so-we-cant-know/)    
-[Mouse / Human Transcriptomics and Batch Effects](https://rmflight.github.io/posts/2015/06/mouse_human_transcriptomics.html)  
-[Meta-analysis of RNA-seq expression data across species, tissues and studies](http://www.genomebiology.com/2015/16/1/287):**Interspecies clustering by tissue is the predominantly observed pattern among various studies under various distance metrics and normalization methods**
-[Surrogate Variable Analysis:SVA bioconductor](https://www.bioconductor.org/packages/3.3/bioc/html/sva.html)  
-[Paper Summary: Systematic bias and batch effects in single-cell RNA-Seq data](http://nextgenseek.com/2016/01/paper-summary-systematic-bias-and-batch-effects-in-single-cell-rna-seq-data/)  
-[Modeling and correcting fragment sequence bias for RNA-seq](https://github.com/mikelove/alpine): alpine bioconductor package from Mike Love.  
-[BatchQC](https://github.com/mani2012/BatchQC): interactive software for evaluating sample and batch effects in genomic data.
-[A framework for RNA quality correction in differential expression analysis](http://www.biorxiv.org/content/early/2016/09/09/074245)
+* [A reanalysis of mouse ENCODE comparative gene expression data](http://f1000research.com/articles/4-121/v1)  
+* [Is it species or is it batch? They are confounded, so we can't know](http://simplystatistics.org/2015/05/20/is-it-species-or-is-it-batch-they-are-confounded-so-we-cant-know/)    
+* [Mouse / Human Transcriptomics and Batch Effects](https://rmflight.github.io/posts/2015/06/mouse_human_transcriptomics.html)  
+* [Meta-analysis of RNA-seq expression data across species, tissues and studies](http://www.genomebiology.com/2015/16/1/287):**Interspecies clustering by tissue is the predominantly observed pattern among various studies under various distance metrics and normalization methods**
+* [Surrogate Variable Analysis:SVA bioconductor](https://www.bioconductor.org/packages/3.3/bioc/html/sva.html)  
+* [Paper Summary: Systematic bias and batch effects in single-cell RNA-Seq data](http://nextgenseek.com/2016/01/paper-summary-systematic-bias-and-batch-effects-in-single-cell-rna-seq-data/)  
+* [Modeling and correcting fragment sequence bias for RNA-seq](https://github.com/mikelove/alpine): alpine bioconductor package from Mike Love.  
+* [BatchQC](https://github.com/mani2012/BatchQC): interactive software for evaluating sample and batch effects in genomic data.
+* [A framework for RNA quality correction in differential expression analysis](http://www.biorxiv.org/content/early/2016/09/09/074245)
 
 ### Databases
 
