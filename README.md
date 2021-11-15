@@ -326,6 +326,7 @@ Thanks [Rob Patro](https://twitter.com/nomad421) for pointing it out!
 * [SUPPA](https://bitbucket.org/regulatorygenomicsupf/suppa) This tool generates different Alternative Splicing (AS) events and calculates the PSI ("Percentage Spliced In") value for each event exploiting the fast quantification of transcript abundances from multiple samples.
 * [IntSplice](http://www.med.nagoya-u.ac.jp/neurogenetics/IntSplice/): Upload a VCF (variant call format) file to predict if an SNV (single nucleotide variation) from intronic positions -50 to -3 is pathogenic or not.
 * [Whippet](http://www.biorxiv.org/content/early/2017/07/03/158519): an efficient method for the detection and quantification of alternative splicing reveals extensive transcriptomic complexity
+* [RNA splicing analysis using heterogeneous and large RNA-seq datasets](https://www.biorxiv.org/content/10.1101/2021.11.03.467086v2) MAJIQ v2.
 
 
 ### microRNAs and non-coding RNAs
